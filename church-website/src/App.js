@@ -9,8 +9,7 @@ const App = () => {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<div></div>} />
-          {/* Add more routes here */}
+          <Route path='/' exact com/>
         </Routes>
       </Router>
     </>

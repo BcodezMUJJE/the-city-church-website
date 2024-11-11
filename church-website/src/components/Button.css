@@ -3,7 +3,7 @@
 }
 
 .btn{
-    padding: 8px 20px;
+    padding: 8px 30px;
     border-radius: 3px;
     outline: none;
     border: none;
@@ -38,3 +38,19 @@
     color: #242424;
     transition: all 0.3s ease-out;
 }
+
+.navbar .button {
+    display: inline-block;
+    background-color: #f39c12;
+    color: #fff;
+    padding: 14px 28px; /* Increased padding for larger button */
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem; /* Larger font size */
+    font-weight: bold; /* Optional: makes the text more prominent */
+  }
+  
+  .navbar .button:hover {
+    background-color: #e67e22;
+  }

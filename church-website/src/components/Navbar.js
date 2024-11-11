@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../Assets/blackLogo.png';
 import './Navbar.css';
@@ -18,12 +18,18 @@ function Navbar() {
       setButton(true);
     }
   };
+
+  useEffect(() => {
+    showButton();
+  }, []);
   
+
+  window.addEventListener('resize', showButton);
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img src={logo} alt="The City Church Logo" className="navbar-logo-img" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
