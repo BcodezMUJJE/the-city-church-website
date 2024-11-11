@@ -1,19 +1,24 @@
-import React, {useState} from 'react'
+import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from Images/logo1.png
+import logo from '../Assets/blackLogo.png';
+import './Navbar.css';
 
 function Navbar() {
-  return (
-    <>
-        <nav className="navbar">
-            <div className="navbar-container">
-                <Link className="navbar-container">
-                    <img src={logo} alt="Logo" className="navbar-logo-image" />
-                </Link>
-            </div>
-        </nav>
-    </>
-  )
-}
+  const [click, setClick] = useState(false);
 
-export default Navbar
+  const handleClick = () => setClick(!click);
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link to="/" className="navbar-logo">
+          <img src={logo} alt="The City Church Logo" className="navbar-logo-img" />
+        </Link>
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        </div>
+      </div>
+    </nav>
+  );
+}
+export default Navbar;
