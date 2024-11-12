@@ -24,30 +24,38 @@ video {
     margin-top: -100px;
   }
   
-  @keyframes fadeInUp {
+  @keyframes writeIn {
     0% {
+        width: 0;
         opacity: 0;
-        transform: translateY(20px);
         text-shadow: none;
     }
-    100% {
+    50% {
         opacity: 1;
-        transform: translateY(0);
+        width: 100%;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+        text-shadow: none;
     }
 }
 
-  .hero-container > p {
+.hero-container > p {
     margin-top: 8px;
     color: #fff;
     font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
-    align-items: center;
-    animation: fadeInUp 1.9s ease-out infinite alternate;
-    font-size: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    white-space: nowrap; /* Keeps text on a single line */
+    overflow: hidden; /* Hides overflow for the typing effect */
+    display: inline-block;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+    animation: writeIn 15s ease-in-out infinite;
+    border-right: 2px solid #fff;
+}
+
   
   .hero-btns {
     margin-top: 32px;
