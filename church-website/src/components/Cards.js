@@ -1,44 +1,49 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import img9 from '../Assets/PastorA.jpeg';
+import img2 from '../Assets/Round.jpeg';
+import imgYouth from '../Assets/TheChristGeneration.jpeg';  // Fixed path
+import imgLeadership from '../Assets/Bill.jpeg';
+import imgKids from '../Assets/CityKidz.jpeg';
 
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Check out these EPIC Destinations!</h1>
+      <h1>Check out What Happens At The City Church</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-9.jpg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
-              label='Adventure'
+              src={img9}
+              text='Join us every Sunday at The City Churches for uplifting worship, inspiring messages, and a warm community as we celebrate God’s grace!'
+              label='Sunday Service'
               path='/services'
             />
             <CardItem
-              src='images/img-2.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
+              src={img2}
+              text='Join us Thursdays, 5:30 – 7:00PM, in our missional communities to reflect on the past Sunday’s service.'
+              label='Round Table'
               path='/services'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='Assets/fourrrr.jpeg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
+              src={imgYouth}
+              text='We invite all youth to the Youth Experience every last Saturday of the month for worship, fun, prayer, and food. Don’t miss out!'
+              label='The Christ Generation (TCG)'
               path='/services'
             />
             <CardItem
-              src='Assets/oneeee.jpeg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
+              src={imgLeadership}
+              text='Join us at The City Leadership Institute every month for growth, learning, and leadership development!'
+              label='The City Leadership Institute (CLI)'
               path='/products'
             />
             <CardItem
-              src='Assets/threee.jpeg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
+              src={imgKids}
+              text='We invite all kids to The City Kids every Sunday for fun, learning, and growing in God’s love!'
+              label='The City Kids'
               path='/sign-up'
             />
           </ul>
