@@ -1,0 +1,132 @@
+.footer{
+  padding: 4rem 6rem;
+  background: #000;
+  color: #fff;
+}
+
+.top{
+  display: flex;
+  justify-items: space-between;
+  text-align: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top i{
+  color: #fff;
+  font-size: 2.1rem;
+  margin-right: 1rem;
+}
+
+.top i:hover{
+  color: #01959a;
+}
+
+.top h1{
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.top p{
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  text-align: start;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.bottom div{
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom h4{
+  font-size: 1.5rem;
+  padding-bottom: 1rem 0 .8rem;
+}
+
+.bottom a{
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1.1rem;
+  padding-bottom: .5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px; /* Adds space between icons */
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px; /* Rounded corners */
+}
+
+.social-icons a {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #fafafa;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+  color: white; /* Change color on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 850px) {
+  .footer {
+      padding: 4rem 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .top h1 {
+      font-size: 2rem; /* Reduce heading size */
+  }
+
+  .top p {
+      font-size: 1rem; /* Reduce paragraph font size */
+  }
+
+  .bottom div {
+      width: 50%; /* Use half width for bottom sections */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+      padding: 2rem 1rem; /* Further reduce padding for very small screens */
+  }
+
+  .top {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+      text-align: center; /* Center text */
+  }
+
+  .top i {
+      font-size: 1.5rem; /* Smaller icon size */
+      margin: 0.5rem 0; /* Margin adjustments */
+  }
+
+  .bottom {
+      flex-direction: column; /* Stack bottom items vertically */
+      align-items: center; /* Center items */
+      padding-top: 1rem; /* Adjust padding */
+  }
+
+  .bottom div {
+      width: 100%; /* Full width for bottom sections */
+      margin-bottom: 1rem; /* Space between sections */
+  }
+
+  .bottom h4 {
+      font-size: 1.2rem; /* Smaller heading size */
+  }
+
+  .bottom a {
+      font-size: 1rem; /* Smaller link size */
+  }
+}
