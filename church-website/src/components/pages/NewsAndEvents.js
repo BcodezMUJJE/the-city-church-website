@@ -62,43 +62,44 @@ function NewsAndEvents() {
   ];
 
   return (
-    <div className="news-and-events">
-      <h1>NEWS AND EVENTS</h1>
+    <>
+      <div className="news-and-events">
+        <h1>NEWS AND EVENTS</h1>
 
-      {/* News Section */}
-      <section className="news-section">
-        <h2>Latest News</h2>
-        <div className="news-list">
-          {news.map((item) => (
-            <div key={item.id} className="news-card">
-              <h3>{item.title}</h3>
-              <p className="date">{item.date}</p>
-              <p className="description">{item.description}</p>
-              <a href={item.link} className="read-more">Read More</a>
-            </div>
-          ))}
-        </div>
-      </section>
+        {/* News Section */}
+        <section className="news-section">
+          <h2>Latest News</h2>
+          <div className="news-list">
+            {news.map((item) => (
+              <div key={item.id} className="news-card">
+                <h3>{item.title}</h3>
+                <p className="date">{item.date}</p>
+                <p className="description">{item.description}</p>
+                <a href={item.link} className="read-more">Read More</a>
+              </div>
+            ))}
+          </div>
+        </section>
 
-      {/* Events Section */}
-      <section className="events-section">
-        <h2>Upcoming Events</h2>
-        <div className="events-list">
-          {events.map((item) => (
-            <div key={item.id} className="event-card">
-              <h3>{item.title}</h3>
-              <p className="date">{item.date} | {item.time}</p>
-              <p className="location">{item.location}</p>
-              <p className="description">{item.description}</p>
-              <a href={item.link} className="register-now">Learn More</a>
-            </div>
-          ))}
-        </div>
-      </section>
+        {/* Events Section */}
+        <section className="events-section">
+          <h2>Upcoming Events</h2>
+          <div className="events-list">
+            {events.map((item) => (
+              <div key={item.id} className="event-card">
+                <h3>{item.title}</h3>
+                <p className="date">{item.date} | {item.time}</p>
+                <p className="location">{item.location}</p>
+                <p className="description">{item.description}</p>
+                <a href={item.link} className="register-now">Learn More</a>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 
-// Only one default export allowed per module
 export default NewsAndEvents;

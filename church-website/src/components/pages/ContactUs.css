@@ -1,0 +1,148 @@
+/* ContactUs.css */
+.contact {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .contact-box {
+    flex: 1;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-box h2 {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .contact-box h2 span {
+    color: #e67e22;
+  }
+  
+  .contact-box .desc {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .detail .icon {
+    font-size: 1.5em;
+    color: #e67e22;
+  }
+  
+  .detail p {
+    margin: 0;
+    color: #555;
+    font-size: 1em;
+  }
+  
+  .detail p:first-of-type {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  /* Contact Form Styles */
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .field-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .field-box input,
+  .field-box textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+  }
+  
+  .field-box textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #d35400;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    .contact-box {
+      width: 100%;
+    }
+  
+    .contact-box h2 {
+      font-size: 1.8em;
+    }
+  
+    .detail .icon {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-box h2 {
+      font-size: 1.6em;
+    }
+  
+    .detail p {
+      font-size: 0.9em;
+    }
+  
+    .field-box input,
+    .field-box textarea {
+      font-size: 0.9em;
+    }
+  
+    .btn {
+      font-size: 0.9em;
+    }
+  }
