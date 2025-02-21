@@ -1,0 +1,121 @@
+/* App.css */
+.news-and-events {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-and-events h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+  }
+  
+  .news-section, .events-section {
+    margin-bottom: 40px;
+  }
+  
+  .news-section h2, .events-section h2 {
+    color: #e67e22;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .news-list, .events-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .news-card, .event-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .news-card:hover, .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .news-card h3, .event-card h3 {
+    margin: 0 0 10px;
+    color: #2c3e50;
+    font-size: 1.5em;
+  }
+  
+  .news-card .date, .event-card .date {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  .news-card .description, .event-card .description {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .news-card .read-more, .event-card .register-now {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .news-card .read-more:hover, .event-card .register-now:hover {
+    text-decoration: underline;
+  }
+  
+  /* For mobile devices (screen width less than 768px) */
+@media (max-width: 768px) {
+    .news-card, .event-card {
+      width: 100%; /* 1 card per row */
+    }
+  
+    .news-and-events h1 {
+      font-size: 2em;
+    }
+  
+    .news-section h2, .events-section h2 {
+      font-size: 1.6em;
+    }
+  
+    .news-list, .events-list {
+      gap: 15px;
+    }
+  
+    .news-card, .event-card {
+      padding: 15px;
+    }
+  }
+  
+  /* For very small mobile devices (screen width less than 480px) */
+  @media (max-width: 480px) {
+    .news-and-events h1 {
+      font-size: 1.8em;
+    }
+  
+    .news-section h2, .events-section h2 {
+      font-size: 1.4em;
+    }
+  
+    .news-card h3, .event-card h3 {
+      font-size: 1.3em;
+    }
+  
+    .news-card .description, .event-card .description {
+      font-size: 0.9em;
+    }
+  }
