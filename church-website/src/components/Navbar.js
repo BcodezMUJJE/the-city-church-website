@@ -67,7 +67,6 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        {button && <button buttonStyle="btn--outline">JOIN MC</button>}
       </div>
     </nav>
   );
