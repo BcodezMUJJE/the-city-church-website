@@ -1,0 +1,161 @@
+/* Give.css */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background: #f4f6fa;
+    padding: 15px;
+  }
+  
+  .give-container {
+    max-width: 1250px;
+    margin: 25px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .give-container > div {
+    padding: 20px 10px;
+  }
+  
+  .boxs {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f3fa;
+    border-radius: 7px;
+  }
+  
+  .boxs .box {
+    cursor: pointer;
+    width: 31%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    transition: all 0.5s ease-out;
+  }
+  
+  .boxs .box.active,
+  .boxs .box:hover {
+    background: #fff;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.1);
+  }
+  
+  .boxs .box .fas {
+    color: #fff;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+  }
+  
+  .boxs .box:nth-of-type(1) .fas {
+    background: #fb7070; /* MTN Mobile Money */
+  }
+  
+  .boxs .box:nth-of-type(2) .fas {
+    background: #fbaa70; /* Airtel Money */
+  }
+  
+  .boxs .box:nth-of-type(3) .fas {
+    background: #7f7afd; /* Bank Transfer */
+  }
+  
+  .boxs .box h3 {
+    text-transform: uppercase;
+    font-size: 13.1px;
+    color: #080c1c55;
+  }
+  
+  .boxs .box.active h3,
+  .boxs .box:hover h3 {
+    color: #080c1c;
+  }
+  
+  .text {
+    background: #e5e8f2;
+    border-radius: 7px;
+    margin: 50px 0;
+    padding: 20px;
+    box-shadow: inset 1px 1px 5px rgba(150, 150, 150, 0.1);
+  }
+  
+  .text p {
+    margin: 0;
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .text a {
+    color: #7a90fd;
+    text-decoration: none;
+  }
+  
+  .text a:hover {
+    text-decoration: underline;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  
+  .buttons .btn {
+    width: 48%;
+    padding: 17px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 17px rgba(100, 100, 100, 0.1);
+    transition: all 0.5s;
+  }
+  
+  .buttons .btn:hover {
+    box-shadow: none;
+  }
+  
+  .buttons .btn.continue {
+    background: #7a90fd;
+    color: #fff;
+  }
+  
+  .buttons .btn.cancel {
+    background: transparent;
+    color: #7a90fd;
+    border: 2px solid #7a90fd;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 450px) {
+    .give-container {
+      max-width: 350px;
+      padding: 15px;
+      margin-top: 15px;
+    }
+  
+    .boxs {
+      display: block;
+    }
+  
+    .boxs .box {
+      width: 100%;
+      margin: 15px 0;
+    }
+  
+    .buttons {
+      display: block;
+    }
+  
+    .buttons .btn {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
