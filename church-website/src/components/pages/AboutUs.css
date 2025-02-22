@@ -1,0 +1,130 @@
+/* AboutUs.css */
+.story-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #f39c12;
+    box-shadow: 0 0 10px rgba(24, 22, 22, 0.786);
+    font-family: Arial, sans-serif;
+  }
+  
+  .title-section,
+  .content-section p,
+  .content-section h2,
+  .content-section li {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .story-container:hover .title-section,
+  .story-container:hover .content-section p,
+  .story-container:hover .content-section h2,
+  .story-container:hover .content-section li {
+    transform: scale(1.05);
+  }
+  
+  .title-section {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .title-section p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .content-section {
+    padding: 20px;
+  }
+  
+  .content-section p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .content-section h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f39c12;
+  }
+  
+  .content-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .content-section li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .content-section li:before {
+    content: "\2022";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .map-container {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .story-container {
+      padding: 15px;
+    }
+  
+    .title-section p {
+      font-size: 20px;
+    }
+  
+    .content-section p {
+      font-size: 16px;
+    }
+  
+    .content-section h2 {
+      font-size: 20px;
+    }
+  
+    .content-section li:before {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .story-container {
+      padding: 10px;
+    }
+  
+    .title-section p {
+      font-size: 18px;
+    }
+  
+    .content-section p {
+      font-size: 14px;
+    }
+  
+    .content-section h2 {
+      font-size: 18px;
+    }
+  
+    .content-section li:before {
+      font-size: 14px;
+    }
+  }
