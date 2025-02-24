@@ -7,15 +7,16 @@
   
   /* Center the container */
   .container {
-    max-width: 1720px; /* Maximum width of the container */
+    max-width: 1200px; /* Maximum width of the container */
     margin: 0 auto; /* Center the container */
+    color: #e67e22;
   }
   
   /* Slider container */
   .slider {
     position: relative; /* Relative positioning for slider */
-    width: 100%; /* Full width for slider */
-    height: 100%; /* Full height for slider */
+    width: 80%; /* Full width for slider */
+    height: 80%; /* Full height for slider */
     overflow: hidden; /* Hide overflow for slider */
   }
   
@@ -28,7 +29,7 @@
   /* Individual slide item */
   .item {
     text-align: center; /* Center the content */
-    width: 100%; /* Full width for item */
+    width: 80%; /* Full width for item */
     flex-shrink: 0; /* Prevent item from shrinking */
     position: relative; /* Relative positioning for feedback */
   }
@@ -47,7 +48,7 @@
     bottom: 20px; /* Position at the bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust horizontal position */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgba(58, 53, 53, 0.7); /* Semi-transparent background */
     padding: 10px 20px; /* Padding for feedback text */
     border-radius: 10px; /* Rounded corners */
     max-width: 80%; /* Maximum width for feedback */
@@ -67,7 +68,7 @@
     transform: translateY(-50%); /* Adjust button position */
     cursor: pointer; /* Pointer cursor for buttons */
     font-size: 24px; /* Larger font size for buttons */
-    color: #4e60c8; /* Color for buttons */
+    color:rgb(252, 139, 19); /* Color for buttons */
     transition: color 0.3s; /* Smooth transition for hover effect */
   }
   
