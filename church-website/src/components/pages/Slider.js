@@ -13,27 +13,55 @@ const Slider = () => {
   const slides = [
     {
       src: church_1,
-      alt: 'City Church Exterior',
-      feedback: 'The exterior of our church is a symbol of hope and faith in the heart of the city.',
+      alt: 'Pastor Alex Mutagubya - Lead Pastor',
+      label: 'Pastor Dennis Onen - Lead Pastor',  
+      feedback: 'Pastor Alex Mutagubya is a visionary leader, passionate preacher, and dedicated shepherd who serves as the Lead Pastor of The City Church.',
     },
     {
       src: church_2,
-      alt: 'City Church Interior',
+      alt: 'Pastor Faith Mutagubya',
+      label: 'Pastor Faith Mutagubya',
       feedback: 'Our beautiful interior provides a serene space for worship and reflection.',
     },
     {
       src: church_3,
-      alt: 'City Church Worship Service',
+      alt: 'Pastor Simon Kirabo - Location Pastor Iganga',
+      label: 'Pastor Simon Kirabo - Location Pastor Iganga',
       feedback: 'Join us for uplifting worship services that bring the community together.',
     },
     {
       src: church_4,
-      alt: 'City Church Community Event',
+      alt: 'Pastor Lillian Kirabo - Location Pastor Iganga',
       feedback: 'We host community events to foster connection and support among our members.',
     },
     {
       src: church_5,
-      alt: 'City Church Youth Program',
+      alt: 'Pastor Dennis Onen - Youth Pastor',
+      feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
+    },
+    {
+      src: church_5,
+      alt: 'Pastor Becky Onen - Youth Pastor',
+      feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
+    },
+    {
+      src: church_5,
+      alt: 'Pastor Judith - Executive Pastor',
+      feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
+    },
+    {
+      src: church_5,
+      alt: 'Pastor Martha Banalya - Location Pastor Luzira',
+      feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
+    },
+    {
+      src: church_5,
+      alt: 'Pastor Derrick Mooli - Location Pastor Kirinya',
+      feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
+    },
+    {
+      src: church_5,
+      alt: 'Pastor Deborah Mooli - Location Pastor Kirinya',
       feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
     },
   ];
