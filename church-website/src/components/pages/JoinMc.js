@@ -11,6 +11,9 @@ function JoinMc() {
     comments: '',
   });
 
+  const [result, setResult] = useState('');
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -19,18 +22,44 @@ function JoinMc() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // You can replace this with an API call to submit the form data
-    console.log('Form Data Submitted:', formData);
-    alert('Thank you for your interest in joining a missional community! We will contact you soon.');
-    setFormData({
-      fullName: '',
-      email: '',
-      phone: '',
-      preferredCommunity: '',
-      comments: '',
-    });
+    setLoading(true);
+    setResult("Submitting...");
+
+    const formDataToSend = new FormData();
+    formDataToSend.append("access_key", "923e2220-4316-4d1b-8550-69d6d5ea64c3");
+    formDataToSend.append("fullName", formData.fullName);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("phone", formData.phone);
+    formDataToSend.append("preferredCommunity", formData.preferredCommunity);
+    formDataToSend.append("comments", formData.comments);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataToSend,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Your request has been submitted successfully!");
+        setFormData({
+          fullName: '',
+          email: '',
+          phone: '',
+          preferredCommunity: '',
+          comments: '',
+        });
+      } else {
+        setResult("Failed to submit. Please try again.");
+      }
+    } catch (error) {
+      setResult("Error submitting form. Check your connection.");
+    }
+
+    setLoading(false);
   };
 
   return (
@@ -38,7 +67,8 @@ function JoinMc() {
       <div className="missional-community-form">
         <h1>Join a Missional Community</h1>
         <p className="description">
-          Missional communities are small groups of believers who gather to grow in faith, serve the community, and share the love of Christ. Fill out the form below to join a missional community.
+          Missional communities are small groups of believers who gather to grow in faith, serve the community, and share the love of Christ.
+          Fill out the form below to join a missional community.
         </p>
 
         <form onSubmit={handleSubmit}>
@@ -106,10 +136,13 @@ function JoinMc() {
             ></textarea>
           </div>
 
-          <button type="submit" className="submit-button">Submit</button>
+          <button type="submit" className="submit-button" disabled={loading}>
+            {loading ? "Submitting..." : "Submit"}
+          </button>
+          <p className="result-message">{result}</p>
         </form>
       </div>
-      <Footer /> {/* Add the Footer component here */}
+      <Footer />
     </>
   );
 }

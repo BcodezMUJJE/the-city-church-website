@@ -1,6 +1,6 @@
 /* Container for image slider */
 .image-slider {
-    background-color: #f9f9f9; /* Light background color */
+    background-color: #e67e22; /* Light background color */
     padding: 60px 0; /* Top and bottom padding */
     position: relative; /* Relative positioning for slider */
   }
@@ -9,14 +9,14 @@
   .container {
     max-width: 1200px; /* Maximum width of the container */
     margin: 0 auto; /* Center the container */
-    color: #e67e22;
+    color:rgb(199, 187, 177);
   }
   
   /* Slider container */
   .slider {
     position: relative; /* Relative positioning for slider */
-    width: 80%; /* Full width for slider */
-    height: 80%; /* Full height for slider */
+    width: 100%; /* Full width for slider */
+    height: 100%; /* Full height for slider */
     overflow: hidden; /* Hide overflow for slider */
   }
   
@@ -29,14 +29,14 @@
   /* Individual slide item */
   .item {
     text-align: center; /* Center the content */
-    width: 80%; /* Full width for item */
+    width: 100%; /* Full width for item */
     flex-shrink: 0; /* Prevent item from shrinking */
     position: relative; /* Relative positioning for feedback */
   }
   
   /* Image styles */
   .slider-image {
-    width: 100%; /* Full width for images */
+    width: 80%; /* Full width for images */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
@@ -68,7 +68,7 @@
     transform: translateY(-50%); /* Adjust button position */
     cursor: pointer; /* Pointer cursor for buttons */
     font-size: 24px; /* Larger font size for buttons */
-    color:rgb(252, 139, 19); /* Color for buttons */
+    color:rgb(245, 242, 239); /* Color for buttons */
     transition: color 0.3s; /* Smooth transition for hover effect */
   }
   

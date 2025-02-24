@@ -13,6 +13,9 @@ function ContactUs() {
     message: '',
   });
 
+  const [result, setResult] = useState('');
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -21,18 +24,44 @@ function ContactUs() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // You can replace this with an API call to submit the form data
-    console.log('Form Data Submitted:', formData);
-    alert('Thank you for reaching out! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      message: '',
-    });
+    setLoading(true);
+    setResult("Sending...");
+
+    const formDataToSend = new FormData();
+    formDataToSend.append("access_key", "923e2220-4316-4d1b-8550-69d6d5ea64c3");
+    formDataToSend.append("name", formData.name);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("phone", formData.phone);
+    formDataToSend.append("subject", formData.subject);
+    formDataToSend.append("message", formData.message);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataToSend
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setResult("Your message has been sent successfully!");
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: '',
+        });
+      } else {
+        setResult("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      setResult("Error submitting form. Check your connection.");
+    }
+
+    setLoading(false);
   };
 
   return (
@@ -69,45 +98,19 @@ function ContactUs() {
             <div className="social-media-section">
               <h3>Follow Us</h3>
               <div className="social-icons">
-                
-                <a
-                  href="https://www.instagram.com/theecitychurch/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                >
+                <a href="https://www.instagram.com/theecitychurch/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <FaInstagram className="icon" />
                 </a>
-                <a
-                  href="https://www.facebook.com/TheeCityChurch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                >
+                <a href="https://www.facebook.com/TheeCityChurch" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <FaFacebook className="icon" />
                 </a>
-                <a
-                  href="https://x.com/TheCityChurchL/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Twitter"
-                >
+                <a href="https://x.com/TheCityChurchL/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                   <FaTwitter className="icon" />
                 </a>
-                <a
-                  href="https://www.linkedin.com/company/the-city-church-luzira/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                >
+                <a href="https://www.linkedin.com/company/the-city-church-luzira/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                   <FaLinkedin className="icon" />
                 </a>
-                <a
-                  href="https://theecitychurchluzira.podbean.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Podbean"
-                >
+                <a href="https://theecitychurchluzira.podbean.com/" target="_blank" rel="noopener noreferrer" aria-label="Podbean">
                   <FaPodcast className="icon" />
                 </a>
               </div>
@@ -119,47 +122,16 @@ function ContactUs() {
             <form onSubmit={handleSubmit} id="contactForm">
               <h2>Get In <span>Touch</span></h2>
               <div className="field-box">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
-                <input
-                  type="text"
-                  name="phone"
-                  placeholder="Phone Number"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                />
-                <input
-                  type="text"
-                  name="subject"
-                  placeholder="Subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                />
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                ></textarea>
+                <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required />
+                <input type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required />
+                <input type="text" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required />
+                <input type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} required />
+                <textarea name="message" placeholder="Your Message" value={formData.message} onChange={handleChange} required></textarea>
               </div>
-              <button type="submit" className="btn">Submit</button>
+              <button type="submit" className="btn" disabled={loading}>
+                {loading ? "Sending..." : "Submit"}
+              </button>
+              <p className="result-message">{result}</p>
             </form>
           </div>
         </div>
