@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ContactUs.css';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin, FaPodcast } from 'react-icons/fa'; // Icons for social media platforms
 import Footer from "../Footer";
 
 function ContactUs() {
@@ -42,9 +43,10 @@ function ContactUs() {
           <div className="contact-box">
             <h2>Let's Connect</h2>
             <p className="desc">
-            At The City Church, we believe in open communication and building a strong community.  
-            We encourage you to ask any questions you have – no matter how big or small.  We're here to support 
-            you on your journey and are happy to provide any information you need.  Connect with us!</p>
+              At The City Church, we believe in open communication and building a strong community.  
+              We encourage you to ask any questions you have – no matter how big or small. We're here to support 
+              you on your journey and are happy to provide any information you need. Connect with us!
+            </p>
             <div className="contact-details">
               <div className="detail">
                 <FaPhone className="icon" />
@@ -60,6 +62,54 @@ function ContactUs() {
                 <FaMapMarkerAlt className="icon" />
                 <p>Address</p>
                 <p>Kampala - Luzira</p>
+              </div>
+            </div>
+
+            {/* Social Media Section */}
+            <div className="social-media-section">
+              <h3>Follow Us</h3>
+              <div className="social-icons">
+                
+                <a
+                  href="https://www.instagram.com/theecitychurch/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <FaInstagram className="icon" />
+                </a>
+                <a
+                  href="https://www.facebook.com/TheeCityChurch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <FaFacebook className="icon" />
+                </a>
+                <a
+                  href="https://x.com/TheCityChurchL/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
+                  <FaTwitter className="icon" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/the-city-church-luzira/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedin className="icon" />
+                </a>
+                <a
+                  href="https://theecitychurchluzira.podbean.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Podbean"
+                >
+                  <FaPodcast className="icon" />
+                </a>
               </div>
             </div>
           </div>

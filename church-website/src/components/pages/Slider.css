@@ -1,0 +1,131 @@
+/* Container for image slider */
+.image-slider {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 60px 0; /* Top and bottom padding */
+    position: relative; /* Relative positioning for slider */
+  }
+  
+  /* Center the container */
+  .container {
+    max-width: 1720px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Slider container */
+  .slider {
+    position: relative; /* Relative positioning for slider */
+    width: 100%; /* Full width for slider */
+    height: 100%; /* Full height for slider */
+    overflow: hidden; /* Hide overflow for slider */
+  }
+  
+  /* Slider track */
+  .slider-track {
+    display: flex; /* Use flexbox for track */
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+  }
+  
+  /* Individual slide item */
+  .item {
+    text-align: center; /* Center the content */
+    width: 100%; /* Full width for item */
+    flex-shrink: 0; /* Prevent item from shrinking */
+    position: relative; /* Relative positioning for feedback */
+  }
+  
+  /* Image styles */
+  .slider-image {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  }
+  
+  /* Feedback container */
+  .feedback-container {
+    position: absolute; /* Absolute positioning for feedback */
+    bottom: 20px; /* Position at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust horizontal position */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px 20px; /* Padding for feedback text */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 80%; /* Maximum width for feedback */
+  }
+  
+  /* Feedback text */
+  .feedback-text {
+    color: #fff; /* White text color */
+    font-size: 1.1em; /* Font size for feedback */
+    margin: 0; /* Remove default margin */
+  }
+  
+  /* Navigation buttons */
+  .nav-btn {
+    position: absolute; /* Absolute positioning for buttons */
+    top: 50%; /* Center buttons vertically */
+    transform: translateY(-50%); /* Adjust button position */
+    cursor: pointer; /* Pointer cursor for buttons */
+    font-size: 24px; /* Larger font size for buttons */
+    color: #4e60c8; /* Color for buttons */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-btn:hover {
+    color: #333; /* Darker color for hover effect */
+  }
+  
+  .prev-btn {
+    left: 10px; /* Position for previous button */
+  }
+  
+  .next-btn {
+    right: 10px; /* Position for next button */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .item {
+      margin-bottom: 30px; /* Margin for mobile view */
+    }
+  
+    .slider-image {
+      width: 90%; /* Adjust image width for smaller screens */
+    }
+  
+    .feedback-container {
+      bottom: 10px; /* Adjust position for smaller screens */
+      padding: 8px 15px; /* Adjust padding for smaller screens */
+    }
+  
+    .feedback-text {
+      font-size: 1em; /* Smaller font size for feedback */
+    }
+  
+    .nav-btn {
+      font-size: 20px; /* Smaller button size for mobile */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .image-slider {
+      padding: 40px 0; /* Adjust padding for very small screens */
+    }
+  
+    .slider-image {
+      width: 85%; /* Further adjust image width for very small screens */
+    }
+  
+    .feedback-container {
+      bottom: 5px; /* Further adjust position for very small screens */
+      padding: 5px 10px; /* Further adjust padding for very small screens */
+    }
+  
+    .feedback-text {
+      font-size: 0.9em; /* Smaller font size for very small screens */
+    }
+  
+    .nav-btn {
+      font-size: 18px; /* Smaller button size for very small screens */
+    }
+  }

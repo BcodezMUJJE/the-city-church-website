@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutUs.css'; // Import the CSS file
 import Footer from '../Footer'; // Import the Footer component
+import Slider from './Slider.js'
 
 function AboutUs() {
   return (
@@ -99,6 +100,7 @@ function AboutUs() {
           </div>
         </div>
       </div>
+      <Slider />
       <Footer />
     </>
   );
