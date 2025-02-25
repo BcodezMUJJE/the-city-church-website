@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import './Slider.css';
-import church_1 from '../../Assets/oneeee.jpeg';
-import church_2 from '../../Assets/oneeee.jpeg';
-import church_3 from '../../Assets/oneeee.jpeg';
-import church_4 from '../../Assets/fourrrr.jpeg';
-import church_5 from '../../Assets/prayer.jpeg';
+import church_1 from '../../Assets/PastorAlex.jpg';
+import church_2 from '../../Assets/PastorFaith.jpg';
+import church_3 from '../../Assets/PastorSimon.jpg';
+import church_4 from '../../Assets/PasLI.jpg';
+import church_5 from '../../Assets/PastorDenis.jpg';
+import church_6 from '../../Assets/PasBI.jpg';
+import church_7 from '../../Assets/PastorJudith.jpg';
+import church_8 from '../../Assets/PasK.jpg';
+import church_9 from '../../Assets/PasD2.jpg';
+import church_10 from '../../Assets/PasDE2.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -40,27 +45,27 @@ const Slider = () => {
       feedback: 'Pastor Dennis Onen is the Youth Pastor at The City Church, dedicated to mentoring and discipling the next generation. With a deep passion for young people, he creates engaging and transformative experiences that help them grow in their faith and purpose.',
     },
     {
-      src: church_5,
+      src: church_6,
       alt: 'Pastor Becky Onen - Youth Pastor',
       feedback: 'Pastor Becky Onen serves as a Youth Pastor at The City Church, alongside Pastor Dennis Onen. She is a passionate leader dedicated to guiding and mentoring young people in their spiritual journey.',
     },
     {
-      src: church_5,
+      src: church_7,
       alt: 'Pastor Judith - Executive Pastor',
       feedback: 'Pastor Judith serves as the Executive Pastor at The City Church, playing a crucial role in the church’s leadership and administration. With a deep commitment to ministry and organizational excellence, she ensures that the church operates effectively while staying true to its mission.',
     },
     {
-      src: church_5,
+      src: church_8,
       alt: 'Pastor Martha Banalya - Location Pastor Luzira',
       feedback: 'Pastor Martha Banalya is the Location Pastor of The City Church Luzira. She is a dedicated and passionate leader with a heart for discipleship and community transformation.',
     },
     {
-      src: church_5,
+      src: church_9,
       alt: 'Pastor Derrick Mooli - Location Pastor Kirinya',
       feedback: 'Pastor Derrick Mooli is the Location Pastor of The City Church Kirinya. He is a devoted and visionary leader committed to spreading the gospel and building a strong faith community.',
     },
     {
-      src: church_5,
+      src: church_10,
       alt: 'Pastor Deborah Mooli - Location Pastor Kirinya',
       feedback: 'Pastor Deborah Mooli serves as the Location Pastor of The City Church Kirinya alongside Pastor Derrick Mooli. She is a passionate and dedicated leader with a heart for discipleship, mentorship, and community transformation. ',
     },
