@@ -26,7 +26,7 @@ const Slider = () => {
       src: church_2,
       alt: 'Pastor Faith Mutagubya',
       label: 'Pastor Faith Mutagubya',
-      feedback: 'Pastor Faith Mutagubya is the lead pastor of The City Church in Kampala, Uganda. She is known for her dynamic preaching and commitment to discipling believers.',
+      feedback: 'Pastor Faith Mutagubya is a pastor at The City Church Luzira, Uganda. She is known for her dynamic preaching and commitment to discipling believers.',
     },
     {
       src: church_3,
