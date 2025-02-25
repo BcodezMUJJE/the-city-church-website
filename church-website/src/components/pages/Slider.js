@@ -21,48 +21,48 @@ const Slider = () => {
       src: church_2,
       alt: 'Pastor Faith Mutagubya',
       label: 'Pastor Faith Mutagubya',
-      feedback: 'Our beautiful interior provides a serene space for worship and reflection.',
+      feedback: 'Pastor Faith Mutagubya is the lead pastor of The City Church in Kampala, Uganda. She is known for her dynamic preaching and commitment to discipling believers.',
     },
     {
       src: church_3,
       alt: 'Pastor Simon Kirabo - Location Pastor Iganga',
       label: 'Pastor Simon Kirabo - Location Pastor Iganga',
-      feedback: 'Join us for uplifting worship services that bring the community together.',
+      feedback: 'Pastor Simon Kirabo is the Location Pastor of The City Church Iganga. He is a dedicated and passionate leader committed to spreading the gospel and building a strong faith community.',
     },
     {
       src: church_4,
       alt: 'Pastor Lillian Kirabo - Location Pastor Iganga',
-      feedback: 'We host community events to foster connection and support among our members.',
+      feedback: 'Pastor Lillian Kirabo serves as the Location Pastor of The City Church Iganga alongside Pastor Simon Kirabo. She is a passionate leader with a heart for discipleship, mentorship, and community transformation. ',
     },
     {
       src: church_5,
       alt: 'Pastor Dennis Onen - Youth Pastor',
-      feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
+      feedback: 'Pastor Dennis Onen is the Youth Pastor at The City Church, dedicated to mentoring and discipling the next generation. With a deep passion for young people, he creates engaging and transformative experiences that help them grow in their faith and purpose.',
     },
     {
       src: church_5,
       alt: 'Pastor Becky Onen - Youth Pastor',
-      feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
+      feedback: 'Pastor Becky Onen serves as a Youth Pastor at The City Church, alongside Pastor Dennis Onen. She is a passionate leader dedicated to guiding and mentoring young people in their spiritual journey.',
     },
     {
       src: church_5,
       alt: 'Pastor Judith - Executive Pastor',
-      feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
+      feedback: 'Pastor Judith serves as the Executive Pastor at The City Church, playing a crucial role in the church’s leadership and administration. With a deep commitment to ministry and organizational excellence, she ensures that the church operates effectively while staying true to its mission.',
     },
     {
       src: church_5,
       alt: 'Pastor Martha Banalya - Location Pastor Luzira',
-      feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
+      feedback: 'Pastor Martha Banalya is the Location Pastor of The City Church Luzira. She is a dedicated and passionate leader with a heart for discipleship and community transformation.',
     },
     {
       src: church_5,
       alt: 'Pastor Derrick Mooli - Location Pastor Kirinya',
-      feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
+      feedback: 'Pastor Derrick Mooli is the Location Pastor of The City Church Kirinya. He is a devoted and visionary leader committed to spreading the gospel and building a strong faith community.',
     },
     {
       src: church_5,
       alt: 'Pastor Deborah Mooli - Location Pastor Kirinya',
-      feedback: 'Our youth programs inspire the next generation to grow in faith and leadership.',
+      feedback: 'Pastor Deborah Mooli serves as the Location Pastor of The City Church Kirinya alongside Pastor Derrick Mooli. She is a passionate and dedicated leader with a heart for discipleship, mentorship, and community transformation. ',
     },
   ];
 
