@@ -72,7 +72,7 @@
   display: block;
   text-align: center;
   padding: 12px 20px;
-  background-color: #ff6600; /* Change to your preferred color */
+  background-color: #f39c12; /* Change to your preferred color */
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -83,7 +83,7 @@
 
 .nav-links-mobile:hover {
   background-color: white; /* Darker shade for hover effect */
-  color: #ff6600;
+  color: #f39c12;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
