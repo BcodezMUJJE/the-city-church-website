@@ -132,7 +132,7 @@
   }
 
   .feedback-container {
-    bottom: 5px; /* Further adjust position for very small screens */
+    bottom: 3px; /* Further adjust position for very small screens */
     padding: 8px 10px; /* Further adjust padding for very small screens */
   }
 
@@ -141,7 +141,7 @@
   }
 
   .feedback-text {
-    font-size: 0.9em; /* Smaller font size for feedback */
+    font-size: 0.5em; /* Smaller font size for feedback */
   }
 
   .nav-btn {
