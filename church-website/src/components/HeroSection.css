@@ -45,7 +45,7 @@ video {
 .hero-container > p {
     margin-top: 8px;
     color: #fff;
-    font-size: 32px;
+    font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     white-space: nowrap;
@@ -55,7 +55,6 @@ video {
     animation: writeIn 15s ease-in-out infinite;
     border-right: 2px solid #fff;
 }
-
   
   .hero-btns {
     margin-top: 32px;
