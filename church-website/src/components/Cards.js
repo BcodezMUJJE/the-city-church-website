@@ -7,6 +7,8 @@ import imgYouth from '../Assets/TheChristGeneration.jpeg';  // Fixed path
 import imgLeadership from '../Assets/Bill.jpeg';
 import imgKids from '../Assets/CityKidz.jpeg';
 
+
+
 function Cards() {
   return (
     <div className='cards'>
@@ -38,13 +40,13 @@ function Cards() {
               src={imgLeadership}
               text='Join us at The City Leadership Institute every month for growth, learning, and leadership development!'
               label='The City Leadership Institute (CLI)'
-              path='/products'
+              path='/Cli'
             />
             <CardItem
               src={imgKids}
               text='We invite all kids to The City Kids every Sunday for fun, learning, and growing in God’s love!'
               label='The City Kids'
-              path='/sign-up'
+              path='/'
             />
           </ul>
         </div>
