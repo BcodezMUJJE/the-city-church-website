@@ -8,6 +8,7 @@ import Give from './components/pages/Give';
 import ContactUs from './components/pages/ContactUs';
 import JoinMc from './components/pages/JoinMc';
 import AboutUs from './components/pages/AboutUs';
+import Cli from './components/Cli';
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         <Route path='/give' element={<Give />} /> 
         <Route path='/contact-us' element={<ContactUs />} />
         <Route path='/about-us' element={<AboutUs />} /> 
-        <Route path='/join-mc' element={<JoinMc />} /> 
+        <Route path='/join-mc' element={<JoinMc />} />
+        <Route path="/Cli" element={<Cli />} />
       </Routes>
     </Router>
   );
