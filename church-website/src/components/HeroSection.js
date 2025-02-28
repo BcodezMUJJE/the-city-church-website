@@ -11,7 +11,7 @@ function HeroSection() {
                 <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>GET STARTED</Button>
             </div>
             <div className="hero-btns">
-                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'> WATCH SERVICE <i className='far fa-play-circle' /></Button>
+                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large' href="https://www.youtube.com/@thecitychurch-luzira2585"> WATCH SERVICE <i className='far fa-play-circle' /></Button>
             </div>
             <p>Welcome To The City Church, A Place Where You Come And Feel Welcome Stay And Keep Growing.</p>
         </div>
