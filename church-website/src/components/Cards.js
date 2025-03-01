@@ -7,8 +7,6 @@ import imgYouth from '../Assets/TheChristGeneration.jpeg';  // Fixed path
 import imgLeadership from '../Assets/Bill.jpeg';
 import imgKids from '../Assets/CityKidz.jpeg';
 
-
-
 function Cards() {
   return (
     <div className='cards'>
@@ -20,7 +18,7 @@ function Cards() {
               src={img9}
               text='Join us every Sunday at The City Churches for uplifting worship, inspiring messages, and a warm community as we celebrate God’s grace!'
               label='Sunday Service'
-              path='/services'
+              path='/service-times'
             />
             <CardItem
               src={img2}
