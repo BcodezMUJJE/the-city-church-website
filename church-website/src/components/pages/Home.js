@@ -4,6 +4,8 @@ import HeroSection from '../HeroSection';
 import Cards from '../Cards';
 import Footer from '../Footer';
 import Slida from '../Slida';
+import Locations from '../Locations';
+
 
 function Home() {
     return (
@@ -11,6 +13,7 @@ function Home() {
             <HeroSection />
             <Cards />
             <Slida />
+            <Locations />
             <Footer />
         </>
     );
