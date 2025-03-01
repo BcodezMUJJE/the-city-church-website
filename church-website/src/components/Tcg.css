@@ -1,0 +1,360 @@
+/* -------------------- Base Styles -------------------- */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #f39c12;
+  line-height: 1.6;
+}
+
+.tcg-page {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* -------------------- Header -------------------- */
+.tcg-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #2c3e50, #eab105);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.tcg-header-content {
+  text-align: left;
+  max-width: 60%; /* Adjust as needed */
+}
+
+.tcg-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tcg-header p {
+  font-size: 1.2rem;
+  color: #ecf0f1;
+}
+
+.tcg-header img {
+  max-width: 35%; /* Adjust as needed */
+  height: auto;
+  border-radius: 10px; /* Optional: Add rounded corners to the image */
+}
+
+/* -------------------- Sections -------------------- */
+.tcg-about,
+.tcg-mission,
+.tcg-upcoming-events,
+.tcg-join-us,
+.tcg-contact {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.tcg-about h2,
+.tcg-mission h2,
+.tcg-upcoming-events h2,
+.tcg-join-us h2,
+.tcg-contact h2 {
+  font-size: 2rem;
+  color: #f39c12;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f39c12;
+  padding-bottom: 10px;
+}
+
+.tcg-about p,
+.tcg-mission p,
+.tcg-join-us p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* -------------------- Upcoming Events -------------------- */
+.tcg-upcoming-events ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tcg-upcoming-events li {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f4f4f4;
+  border-radius: 5px;
+}
+
+.tcg-upcoming-events li strong {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.tcg-upcoming-events li p {
+  margin: 10px 0 0;
+  color: #555;
+}
+
+/* -------------------- Join Us Form -------------------- */
+.tcg-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2c3e50;
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #f39c12;
+}
+
+/* -------------------- Contact Form -------------------- */
+.tcg-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tcg-contact span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #2c3e50;
+}
+
+/* -------------------- Responsive Design -------------------- */
+
+/* Mobile devices (Android, iOS, etc.) */
+@media (max-width: 480px) {
+  .tcg-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .tcg-header p {
+    font-size: 1rem;
+  }
+
+  .tcg-header img {
+    max-width: 45%;
+  }
+
+  .tcg-about h2,
+  .tcg-mission h2,
+  .tcg-upcoming-events h2,
+  .tcg-join-us h2,
+  .tcg-contact h2 {
+    font-size: 1.4rem;
+  }
+
+  .tcg-about p,
+  .tcg-mission p,
+  .tcg-join-us p {
+    font-size: 0.9rem;
+  }
+
+  .tcg-upcoming-events li strong {
+    font-size: 1rem;
+  }
+
+  .tcg-upcoming-events li p {
+    font-size: 0.9rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Tablets (iPads, 7-8 inch devices) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .tcg-header h1 {
+    font-size: 2.1rem;
+  }
+
+  .tcg-header p {
+    font-size: 1.1rem;
+  }
+
+  .tcg-header img {
+    max-width: 40%;
+  }
+
+  .tcg-about h2,
+  .tcg-mission h2,
+  .tcg-upcoming-events h2,
+  .tcg-join-us h2,
+  .tcg-contact h2 {
+    font-size: 1.6rem;
+  }
+
+  .tcg-about p,
+  .tcg-mission p,
+  .tcg-join-us p {
+    font-size: 1rem;
+  }
+
+  .tcg-upcoming-events li strong {
+    font-size: 1.1rem;
+  }
+
+  .tcg-upcoming-events li p {
+    font-size: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+  }
+}
+
+/* MacBooks (13-inch and similar) */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .tcg-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .tcg-header p {
+    font-size: 1.2rem;
+  }
+
+  .tcg-header img {
+    max-width: 30%;
+  }
+
+  .tcg-about h2,
+  .tcg-mission h2,
+  .tcg-upcoming-events h2,
+  .tcg-join-us h2,
+  .tcg-contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .tcg-about p,
+  .tcg-mission p,
+  .tcg-join-us p {
+    font-size: 1.1rem;
+  }
+
+  .tcg-upcoming-events li strong {
+    font-size: 1.2rem;
+  }
+
+  .tcg-upcoming-events li p {
+    font-size: 1.1rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1.1rem;
+  }
+
+  .submit-btn {
+    font-size: 1.1rem;
+  }
+}
+
+/* Windows Devices (desktops and tablets) */
+@media (min-width: 1281px) and (max-width: 1450px) {
+  .tcg-header h1 {
+    font-size: 2.6rem;
+  }
+
+  .tcg-header p {
+    font-size: 1.3rem;
+  }
+
+  .tcg-header img {
+    max-width: 28%;
+  }
+
+  .tcg-about h2,
+  .tcg-mission h2,
+  .tcg-upcoming-events h2,
+  .tcg-join-us h2,
+  .tcg-contact h2 {
+    font-size: 2rem;
+  }
+
+  .tcg-about p,
+  .tcg-mission p,
+  .tcg-join-us p {
+    font-size: 1.2rem;
+  }
+
+  .tcg-upcoming-events li strong {
+    font-size: 1.3rem;
+  }
+
+  .tcg-upcoming-events li p {
+    font-size: 1.2rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 1.2rem;
+  }
+
+  .submit-btn {
+    font-size: 1.2rem;
+  }
+}

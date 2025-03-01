@@ -24,7 +24,7 @@ function Cards() {
               src={img2}
               text='Join us Thursdays, 5:30 – 7:00PM, in our missional communities to reflect on the past Sunday’s service.'
               label='Round Table'
-              path='/services'
+              path='/weekly-round-table'
             />
           </ul>
           <ul className='cards__items'>
@@ -32,7 +32,7 @@ function Cards() {
               src={imgYouth}
               text='We invite all youth to the Youth Experience every last Saturday of the month for worship, fun, prayer, and food. Don’t miss out!'
               label='The Christ Generation (TCG)'
-              path='/services'
+              path='/tcg-page'
             />
             <CardItem
               src={imgLeadership}

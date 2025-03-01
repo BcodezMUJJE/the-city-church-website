@@ -14,6 +14,7 @@
     max-width: 1290px;
     width: 90%;
     margin: 0 auto;
+    space-between: 20px;
   }
   
   .cards__wrapper {
