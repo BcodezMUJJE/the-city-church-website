@@ -1,0 +1,121 @@
+/* General Styles */
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Header Styles */
+.header {
+  background-color: #f39c12;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+/* Programs Container */
+.programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  padding: 0 15px;
+  margin-bottom: 2rem;
+}
+
+/* Program Card */
+.program {
+  background: #d3c4c4;
+  border-radius: 8px;
+  padding: 20px;
+  width: 45%; /* Two items per row on larger screens */
+  max-width: 600px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.program-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(27, 26, 26, 0.2);
+}
+
+.program h2 {
+  color: #f39c12;
+  font-size: 1.8rem;
+}
+
+.program p {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .programs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .program h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+
+  .program {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .program h2 {
+    font-size: 1.3rem;
+  }
+
+  .program p {
+    font-size: 0.9rem;
+  }
+}

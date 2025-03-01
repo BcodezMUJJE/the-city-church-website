@@ -10,7 +10,7 @@ import Footer from "./Footer";
 
 const leaders = [
   { name: "Pastor Aex Mutagubya", role: "Vision Bearer", img: Img6 },
-  { name: "Madam Rebecca Baguma", role: "Principle - CLI", img: Img4 },
+  { name: "Madam Rebecca Baguma", role: "Principal - CLI", img: Img4 },
   { name: "Pastor Judith", role: " Leadership Mentor", img: Img5 },
 ];
 

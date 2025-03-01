@@ -4,6 +4,7 @@
   text-align: center;
   padding: 2rem;
   background: #f4f4f4;
+  border: 1px solid #ddd;
 }
 
 /* Hero Section */
@@ -53,9 +54,9 @@
 
 .card {
   background: white;
-  padding: 1rem;
+  padding: 6rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(206, 194, 170, 0.903);
   transition: transform 0.3s ease-in-out;
 }
 
