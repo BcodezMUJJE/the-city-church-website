@@ -10,7 +10,7 @@ function HeroSection() {
             <div className="hero-btns">
                 <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large' href="https://www.youtube.com/@thecitychurch-luzira2585"> WATCH SERVICE <i className='far fa-play-circle' /></Button>
             </div>
-            <p>Welcome To The City Church, A Place Where You Come And Feel Welcome Stay And Keep Growing.</p>
+            <p>Welcome To The City Church, A place where you come and feel welcome, stay and keep growing, go and reach out</p>
         </div>
     )
 }

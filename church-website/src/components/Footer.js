@@ -58,6 +58,10 @@ function Footer() {
           <a href="/">Sermons</a>
           <a href="/">Books</a>
         </div>
+        <div>
+          <h4>Privacy Policy</h4>
+          <a href="/term-of-service" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+        </div>
       </div>
     </div>
   );
