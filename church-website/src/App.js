@@ -12,6 +12,8 @@ import Cli from './components/Cli';
 import { ServiceTimes } from './components/Time';
 import { RoundTableDetails } from './components/WeeklyRoundTable';
 import Tcg from './components/Tcg';
+import TermsOfService from './components/TermsOfService';
+
 
 const App = () => {
   return (
@@ -28,6 +30,7 @@ const App = () => {
         <Route path="/service-times" element={<ServiceTimes />} />
         <Route path="/weekly-round-table" element={<RoundTableDetails />} />
         <Route path="/tcg-page" element={<Tcg />} />
+        <Route path="term-of-service" element={<TermsOfService />} />
       </Routes>
     </Router>
   );
