@@ -60,7 +60,7 @@ function Footer() {
         </div>
         <div>
           <h4>Privacy Policy</h4>
-          <a href="/term-of-service" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+          <a href="/term-of-service" target="_blank" rel="noopener noreferrer">Learn More</a>
         </div>
       </div>
     </div>
