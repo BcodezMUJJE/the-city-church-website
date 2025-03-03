@@ -13,6 +13,7 @@ import { ServiceTimes } from './components/Time';
 import { RoundTableDetails } from './components/WeeklyRoundTable';
 import Tcg from './components/Tcg';
 import TermsOfService from './components/TermsOfService';
+import FitForLife from './components/fitforlife'; // Use lowercase
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/weekly-round-table" element={<RoundTableDetails />} />
         <Route path="/tcg-page" element={<Tcg />} />
         <Route path="term-of-service" element={<TermsOfService />} />
+        <Route path="/fitforlife" element={<FitForLife />} />
       </Routes>
     </Router>
   );
