@@ -80,7 +80,7 @@ function ContactUs() {
               <div className="detail">
                 <FaPhone className="icon" />
                 <p>Phone</p>
-                <p>+256 706 332572</p>
+                <p>+256 704 083043</p>
                 
               </div>
               <div className="detail">
