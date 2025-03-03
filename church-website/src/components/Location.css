@@ -27,9 +27,8 @@
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  border-color: #ffb700;
+  border: 2px solid #ffb700; /* Added border color */
 }
-
 
 /* Location name and description styling */
 .location-name {
@@ -62,10 +61,104 @@
   color: #0056b3;
 }
 
-/* Responsive styling for mobile devices */
-@media (max-width: 768px) {
-  .locations-list {
-    flex-direction: column;
-    align-items: center;
+/* Responsive styling for all screen sizes */
+
+/* Small devices (phones, 600px and below) */
+@media (max-width: 600px) {
+  .locations-page {
+    padding: 1rem;
+  }
+
+  .locations-title {
+    font-size: 1.75rem;
+  }
+
+  .location-card {
+    padding: 1rem;
+  }
+
+  .location-name {
+    font-size: 1.25rem;
+  }
+
+  .location-description,
+  .location-address,
+  .location-contact {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium devices (tablets, 601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .locations-page {
+    padding: 1.5rem;
+  }
+
+  .locations-title {
+    font-size: 1.875rem;
+  }
+
+  .location-card {
+    padding: 1.25rem;
+  }
+
+  .location-name {
+    font-size: 1.375rem;
+  }
+
+  .location-description,
+  .location-address,
+  .location-contact {
+    font-size: 0.95rem;
+  }
+}
+
+/* Large devices (laptops, 769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .locations-page {
+    padding: 2rem;
+  }
+
+  .locations-title {
+    font-size: 2rem;
+  }
+
+  .location-card {
+    padding: 1.5rem;
+  }
+
+  .location-name {
+    font-size: 1.5rem;
+  }
+
+  .location-description,
+  .location-address,
+  .location-contact {
+    font-size: 1rem;
+  }
+}
+
+/* Extra large devices (desktops, 1025px and above) */
+@media (min-width: 1025px) {
+  .locations-page {
+    padding: 2.5rem;
+  }
+
+  .locations-title {
+    font-size: 2.25rem;
+  }
+
+  .location-card {
+    padding: 2rem;
+  }
+
+  .location-name {
+    font-size: 1.75rem;
+  }
+
+  .location-description,
+  .location-address,
+  .location-contact {
+    font-size: 1.1rem;
   }
 }
