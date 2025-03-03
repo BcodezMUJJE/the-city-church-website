@@ -76,6 +76,12 @@
   color: white; /* Change color on hover */
 }
 
+.footer .bottom a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 850px) {
   .footer {

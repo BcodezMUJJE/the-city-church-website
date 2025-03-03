@@ -48,16 +48,21 @@ function Footer() {
         </div>
         <div>
           <h4>MISSIONS</h4>
-          <a href="/fitforlife"> Fit for Life</a>
+          <a href="/fitforlife">Fit for Life</a>
           <a href="/">The City Leadership Institute</a>
-          <a href="/">The Fields City International School</a>
           <a href="https://www.transformafricanministries.org/">Transform African Ministries</a>
         </div>
         <div>
           <h4>RESOURCES</h4>
-          <a href="/">First Time Guests (Next steps classes)</a>
-          <a href="/">Sermons</a>
+          <a href="/">First Time Guests/Membership</a>
           <a href="/">Books</a>
+          <a
+            href="https://open.spotify.com/artist/48Uz3wlAuTWxnvj4uXQPD2" // Corrected Spotify link
+            target="_blank" // Open in a new tab
+            rel="noopener noreferrer" // Security best practice
+          >
+            Music
+          </a>
         </div>
         <div>
           <h4>Privacy Policy</h4>
