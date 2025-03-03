@@ -48,6 +48,7 @@ function Footer() {
         </div>
         <div>
           <h4>MISSIONS</h4>
+          <a href="/fitforlife"> Fit for Life</a>
           <a href="/">The City Leadership Institute</a>
           <a href="/">The Fields City International School</a>
           <a href="https://www.transformafricanministries.org/">Transform African Ministries</a>
