@@ -11,10 +11,10 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    max-width: 1290px;
+    max-width: 1450px;
     width: 90%;
     margin: 0 auto;
-    space-between: 20px;
+    margin-bottom: 2.5rem;
   }
   
   .cards__wrapper {
