@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import './Give.css'; // Import the CSS file
-import { FaMobileAlt, FaMoneyBillAlt, FaBank } from 'react-icons/fa'; // Icons for payment methods
+import { FaMobileAlt, FaMoneyBillAlt } from 'react-icons/fa'; // Icons for payment methods
 import Footer from '../Footer'; // Import the Footer component
 
 function Give() {
   const [activeBox, setActiveBox] = useState(1); // State to track the active payment method
-
 
   const handleBoxClick = (index) => {
     setActiveBox(index);
@@ -51,7 +50,7 @@ function Give() {
         <div className="text">
           <p>
             Your generosity helps us continue our mission and serve the community. Thank you for your support!
-            <a href="#">Learn more about giving</a>
+            <a href="/">Learn more about giving</a>
           </p>
         </div>
 
@@ -65,7 +64,7 @@ function Give() {
           </button>
         </div>
       </div>
-      <Footer /> {/* Add the Footer component here */}
+      <Footer />
     </>
   );
 }
