@@ -14,6 +14,7 @@ import { RoundTableDetails } from './components/WeeklyRoundTable';
 import Tcg from './components/Tcg';
 import TermsOfService from './components/TermsOfService';
 import FitForLife from './components/fitforlife'; // Use lowercase
+import CityChurchKidsPage from './components/CityChurchKidsPage';
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/tcg-page" element={<Tcg />} />
         <Route path="term-of-service" element={<TermsOfService />} />
         <Route path="/fitforlife" element={<FitForLife />} />
+        <Route path="/CityChurchKids" element={<CityChurchKidsPage />} />
       </Routes>
     </Router>
   );
