@@ -33,7 +33,8 @@ const RoundTableDetails = () => {
     const payload = {
       whatILearned: formData.whatILearned,
       whatGodIsTellingMe: formData.whatGodIsTellingMe,
-      actionPlan: formData.actionPlan
+      actionPlan: formData.actionPlan,
+      label: "Round Table Questionnaire Replies" // Add the label here
     };
 
     // Use your access key and endpoint here
