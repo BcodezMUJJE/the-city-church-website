@@ -12,6 +12,9 @@ const FitForLife = () => {
     // Append your Web3Forms access key
     formData.append("access_key", "00bb38f1-38dc-4c70-b5ef-0867572bd0da");
 
+    // Append the label to the FormData
+    formData.append("label", "Fit For Life"); // Add the label here
+
     // Submit the form data to Web3Forms
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
