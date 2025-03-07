@@ -8,7 +8,7 @@ function AboutUs() {
     <>
       <div className="story-container">
         <div className="title-section">
-          <p>A Beacon of Hope in the Heart of Luzira, Kampala</p>
+          <p>A Beacon of Hope: Transforming Lives Across Uganda</p>
         </div>
         <div className="content-section">
           <p>

@@ -27,27 +27,28 @@ const ProgramSection = ({ title, description, image }) => {
 const Slida = () => {
   const programs = [
     {
-      title: 'Marrieds Ministry',
+      title: 'The Married’s Ministry',
       description:
-        'Join us for our Marrieds Ministry! We invite all married couples to join us for our Marrieds Ministry sessions at The City Church. Come together with us for spiritual growth, relationship building, and communal support. Let’s unite in faith and strengthen our connection.',
+        'The City Church Marrieds Ministry is a vibrant community of couples who are passionate about cultivating love, laughter, and legacy in their marriages. Through our various programs and events, we provide opportunities for couples to connect, grow, and build a stronger, more resilient marriage that honors God.',
       image: Img2,
     },
     {
-      title: 'Youth Ministry',
+
+      title: 'The Youth Ministry',
       description:
-        'Join us for our Youth Ministry! We invite all youth to join us for our Youth Ministry sessions at The City Church. Come together with us for spiritual growth, relationship building, and communal support. Let’s unite in faith and strengthen our connection.',
+        'The Christ Generation Youth Ministry is a dynamic and vibrant community of young people passionate about living for Jesus Christ. Our mission is to equip and empower the next generation of leaders to become bold, faithful, and influential followers of Christ.',
       image: Img3,
     },
     {
-      title: 'Royal Women’s Ministry',
+      title: 'The Women’s Ministry',
       description:
-        'Join us for our Royal Women’s Ministry! We invite all women to join us for our Royal Women’s Ministry sessions at The City Church. Come together with us for spiritual growth, relationship building, and communal support. Let’s unite in faith and strengthen our connection.',
+        'The City Church Women’s Ministry is a place where women can connect with each other, grow in their faith, and experience transformation in their lives. Through our various programs and events, we provide opportunities for women to build relationships, develop their gifts, and serve others.',
       image: Img1,
     }, // ✅ **Comma added here**
     {
-      title: 'Mens Ministry',
+      title: 'The Men’s Ministry',
       description:
-        'Join us for our Men’s Ministry! We invite all men to join us for our Men’s Ministry sessions at The City Church. Come together with us for spiritual growth, relationship building, and communal support. Let’s unite in faith and strengthen our connection.',
+        'The Kings Men Ministry is a fellowship of married men dedicated to building a community of strong, Godly leaders. Our mission is to equip and empower husbands to become better leaders, fathers, and servants of God.',
       image: Img4,
     },
   ];

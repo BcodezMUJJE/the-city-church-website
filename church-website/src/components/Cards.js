@@ -44,7 +44,7 @@ function Cards() {
               src={imgKids}
               text='We invite all kids to The City Kids every Sunday for fun, learning, and growing in God’s love!'
               label='The City Kids'
-              path='/'
+              path='/CityChurchKids'
             />
           </ul>
         </div>

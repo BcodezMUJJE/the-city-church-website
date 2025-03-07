@@ -5,6 +5,8 @@
   
   h1 {
     text-align: center;
+    margin-bottom: 2rem;
+    color: black;
   }
   
   .cards__container {
