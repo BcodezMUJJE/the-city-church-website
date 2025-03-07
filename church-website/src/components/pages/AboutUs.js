@@ -12,7 +12,7 @@ function AboutUs() {
         </div>
         <div className="content-section">
           <p>
-            The City Church Luzira, a vibrant Christian community, has been a
+            The City Church, a vibrant Christian community, has been a
             source of hope, spiritual growth, and transformation in Luzira,
             Kampala, for many years. Under the leadership of Bishop Alex
             Mutagubya and Pastor Faith Mutagubya, the church has grown into a
@@ -31,10 +31,16 @@ function AboutUs() {
           </p>
           <ul>
             <li>
-              <strong>Bishop Alex Mutagubya</strong> - Lead Pastor
+              <strong>Pastor Alex Mutagubya</strong> - Lead Pastor
             </li>
             <li>
               <strong>Pastor Faith Mutagubya</strong> - Lead Pastor
+            </li>
+            <li>
+              <strong>Pastor Dennis & Becky Onen</strong> - Youth Pastors
+            </li>
+            <li>
+              <strong>Pastor Judith</strong> - Executive Pastor The City Churches
             </li>
             <li>
               <strong>Pastor Lillian & Simon Kirabo</strong> - Location Pastors,
@@ -45,14 +51,9 @@ function AboutUs() {
               Pastors, The City Church Kirinya
             </li>
             <li>
-              <strong>Pastor Judith</strong> - Executive Pastor
+              <strong>Pastor Martha Banalya</strong> - Location Pastor, The City Church Luzira
             </li>
-            <li>
-              <strong>Pastor Martha Banalya</strong> - Location Pastor
-            </li>
-            <li>
-              <strong>Pastor Dennis & Becky Onen</strong> - Youth Pastors
-            </li>
+
           </ul>
           <h2>Our Ministries</h2>
           <p>

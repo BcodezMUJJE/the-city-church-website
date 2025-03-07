@@ -78,7 +78,7 @@
   transform: translateY(-50%); /* Adjust button position */
   cursor: pointer; /* Pointer cursor for buttons */
   font-size: 24px; /* Larger font size for buttons */
-  color: rgb(245, 242, 239); /* Color for buttons */
+  color: rgb(27, 87, 48); /* Color for buttons */
   transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
