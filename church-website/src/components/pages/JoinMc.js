@@ -34,6 +34,7 @@ function JoinMc() {
     formDataToSend.append("phone", formData.phone);
     formDataToSend.append("preferredCommunity", formData.preferredCommunity);
     formDataToSend.append("comments", formData.comments);
+    formDataToSend.append("label", "Joining Missional Community"); // Add the label here
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
