@@ -3,7 +3,7 @@
 }
 
 .btn{
-    padding: 8px 30px;
+    padding: 18px 30px;
     border-radius: 3px;
     outline: none;
     border: none;
@@ -29,8 +29,9 @@
 }
 
 .btn--large{
-    padding: 12px 27px;
-    font-size: 24px;
+    padding: 22px 35px;
+    font-size: 20px;
+    border-radius: 5px;
 }
 
 .btn--medium:hover, .btn--large:hover{
@@ -52,5 +53,5 @@
   }
   
   .navbar .button:hover {
-    background-color: #e67e22;
+    background-color: #ffffff;
   }
