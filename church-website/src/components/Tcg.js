@@ -44,6 +44,9 @@ const TCGPage = () => {
     // Append the access key to the FormData
     formData.append("access_key", "00bb38f1-38dc-4c70-b5ef-0867572bd0da");
 
+    // Add the label "The Christ Generation" to the form data
+    formData.append("label", "The Christ Generation");
+
     // Send the form data to the Web3Forms API endpoint
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",

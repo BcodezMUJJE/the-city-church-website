@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Cli.css";
-import Img1 from "../Assets/2222.jpg";
-import Img2 from "../Assets/1111.jpg";
+import Img1 from "../Assets/1111.jpg";
+import Img2 from "../Assets/2222.jpg";
 import Img3 from "../Assets/3333.jpg";
 import Img4 from "../Assets/4444.jpg";
 import Img5 from "../Assets/PastorJudith.jpg";
@@ -44,12 +44,12 @@ const Cli = () => {
       <section className="about">
         <h2>About CLI</h2>
         <p>
-        At The City Leadership Institute, we are committed to fostering a culture of open communication and collaboration. 
-        Our goal is to empower leaders who can drive meaningful change in their communities. 
-        Whether you have questions about the course structure, assignments, or leadership principles, 
-        we are here to guide and support you every step of the way. Together, we aim to build a strong network of visionary 
-        leaders who are equipped to tackle the challenges of today and tomorrow. 
-        Feel free to reach out to us for any assistance – we’re here to help you succeed!
+          At The City Leadership Institute, we are committed to fostering a culture of open communication and collaboration. 
+          Our goal is to empower leaders who can drive meaningful change in their communities. 
+          Whether you have questions about the course structure, assignments, or leadership principles, 
+          we are here to guide and support you every step of the way. Together, we aim to build a strong network of visionary 
+          leaders who are equipped to tackle the challenges of today and tomorrow. 
+          Feel free to reach out to us for any assistance – we’re here to help you succeed!
         </p>
       </section>
 
@@ -87,6 +87,7 @@ const Cli = () => {
         <p>Become a transformational leader and make a difference.</p>
         <form action="https://api.web3forms.com/submit" method="POST" className="application-form">
           <input type="hidden" name="access_key" value="00bb38f1-38dc-4c70-b5ef-0867572bd0da" />
+          <input type="hidden" name="label" value="The City Leadership Institute" /> {/* Add the label here */}
           <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required />
           <input type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required />
           <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required />
