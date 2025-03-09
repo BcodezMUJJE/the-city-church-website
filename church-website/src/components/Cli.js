@@ -9,15 +9,15 @@ import Img6 from "../Assets/PastorA.jpeg";
 import Footer from "./Footer";
 
 const leaders = [
-  { name: "Pastor Aex Mutagubya", role: "Vision Bearer", img: Img6 },
-  { name: "Madam Rebecca Baguma", role: "Principal - CLI", img: Img4 },
-  { name: "Pastor Judith", role: " Leadership Mentor", img: Img5 },
+  { name: "Dr Aex Mutagubya", role: "Vision Bearer", img: Img6 },
+  { name: "Miss Rebecca Baguma", role: "Principal - CLI", img: Img4 },
+  { name: "Pastor Judith Icumar", role: " Leadership Mentor", img: Img5 },
 ];
 
 const testimonials = [
   { name: "Priscilla Maloba", quote: "CLI transformed my leadership journey, equipping me with the skills to serve my community.", img: Img3 },
-  { name: "Lydia Biira", quote: "The teachings at CLI helped me become a more effective and faith-driven leader.", img: Img1 },
-  { name: "Julius Oboth", quote: "CLI is more than an institute, it's a life-changing experience filled with wisdom and growth.", img: Img2 },
+  { name: "Julius Oboth", quote: "The teachings at CLI helped me become a more effective and faith-driven leader.", img: Img1 },
+  { name: "Lydia Biira", quote: "CLI is more than an institute, it's a life-changing experience filled with wisdom and growth.", img: Img2 },
 ];
 
 const Cli = () => {

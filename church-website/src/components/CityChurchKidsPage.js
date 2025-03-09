@@ -26,7 +26,7 @@ const CityChurchKidsPage = () => {
         marginBottom: '20px',
       },
       subHeader: {
-        color: '#4a90e2',
+        color: '#f39c12',
         marginBottom: '25px',
       },
       section: {
@@ -47,7 +47,7 @@ const CityChurchKidsPage = () => {
         color: '#555',
       },
       button: {
-        backgroundColor: '#4a90e2',
+        backgroundColor: '#f39c12',
         color: '#fff',
         padding: '10px 20px',
         border: 'none',
