@@ -154,15 +154,15 @@ const CityChurchKidsPage = () => {
     },
     {
       image: img3,
-      caption: 'From the Children\'s Ministry: Bringing stories to life through fun and creative skits!',
+      caption: 'From the Children\'s Ministry: Bringing stories to life through fun and creative plays!',
     },
     {
       image: img4,
-      caption: 'Sunday School fun: Dancing with joy and praising in every step!',
+      caption: 'Dancing for joy, praising with every step Sunday School fun in God\'s love!',
     },
     {
       image: img5,
-      caption: 'Sunday School fun: Dancing with joy and praising in every step!',
+      caption: 'Lifting our voices in joy and faith Sunday School singing fills hearts with love and laughter! 🎶🙏😊',
     },
     {
       image: img6,

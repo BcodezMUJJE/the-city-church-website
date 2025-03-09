@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../../App.css';
 import "./NewsAndEvents.css";
 import Footer from '../Footer';
-import Frame from '../../Assets/frame.png'; // Ensure this path is correct
+import Frame from '../../Assets/frame2.png'; // Ensure this path is correct
 
 function NewsAndEvents() {
   const [result, setResult] = useState("");
