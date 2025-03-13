@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Give.css'; // Import the CSS file
-import { FaMobileAlt, FaMoneyBillAlt } from 'react-icons/fa'; // Icons for payment methods
+import airtelImage from '../../Assets/airtel.jpeg'; // Import Airtel image
+import mtnImage from '../../Assets/dfcu.jpeg'; // Import MTN image
+import dfcuImage from '../../Assets/mtn.jpeg'; // Import Bank Transfer image
 import Footer from '../Footer'; // Import the Footer component
 
 function Give() {
@@ -23,8 +25,8 @@ function Give() {
             className={`box ${activeBox === 1 ? 'active' : ''}`}
             onClick={() => handleBoxClick(1)}
           >
-            <FaMobileAlt className="fas" />
-            <h3>MTN Mobile Money</h3>
+            <img src={mtnImage} alt="MTN Mobile Money" className="payment-image" />
+            <h3>BANK TRANSFER</h3>
           </div>
 
           {/* Airtel Money */}
@@ -32,8 +34,8 @@ function Give() {
             className={`box ${activeBox === 2 ? 'active' : ''}`}
             onClick={() => handleBoxClick(2)}
           >
-            <FaMoneyBillAlt className="fas" />
-            <h3>Airtel Money</h3>
+            <img src={airtelImage} alt="Airtel Money" className="payment-image" />
+            <h3>AIRTEL MONEY</h3>
           </div>
 
           {/* Bank Transfer */}
@@ -41,8 +43,8 @@ function Give() {
             className={`box ${activeBox === 3 ? 'active' : ''}`}
             onClick={() => handleBoxClick(3)}
           >
-            <FaMoneyBillAlt className="fas" />
-            <h3>Bank Transfer</h3>
+            <img src={dfcuImage} alt="Bank Transfer" className="payment-image" />
+            <h3>MTN MOBILE MONEY</h3>
           </div>
         </div>
 
