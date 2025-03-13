@@ -92,11 +92,11 @@ const styles = {
     fontFamily: 'Arial, sans-serif',
     textAlign: 'center',
     padding: '20px',
-    maxWidth: '1450px',
+    maxWidth: '1655px',
     margin: '0 auto',
   },
   header: {
-    backgroundColor: '#4CAF50',
+    backgroundColor: 'black',
     color: 'white',
     padding: '20px',
     borderRadius: '8px',
@@ -108,7 +108,7 @@ const styles = {
     borderRadius: '8px',
   },
   h2: {
-    color: '#4CAF50', // Green color for h2 headings
+    color: 'black', // Green color for h2 headings
   },
   list: {
     listStyleType: 'none',
@@ -145,7 +145,7 @@ const styles = {
     maxWidth: '500px',
   },
   button: {
-    backgroundColor: '#4CAF50',
+    backgroundColor: 'orange',
     color: 'white',
     padding: '10px 20px',
     border: 'none',
