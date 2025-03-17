@@ -63,13 +63,6 @@ body {
 
 .book-card {
   background-color: #fff;
-  padding: 25px; /* More padding */
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(230, 147, 32, 0.15);
-  margin-bottom: 2.8rem;
-}
-.book-card {
-  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   border-color: orange;
