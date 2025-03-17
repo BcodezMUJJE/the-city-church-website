@@ -16,9 +16,9 @@ body {
   margin-bottom: 2.5rem;
 }
 
-h1 {
+.library-app h1 {
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgb(54, 49, 49);
   font-size: 42px; /* Increased font size */
   margin-bottom: 25px;
 }
