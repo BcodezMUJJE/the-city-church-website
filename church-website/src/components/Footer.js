@@ -55,7 +55,7 @@ function Footer() {
         <div>
           <h4>RESOURCES</h4>
           <a href="/">First Time Guests/Membership</a>
-          <a href="/">Books</a>
+          <a href="/bookLib">Books</a>
           <a
             href="https://open.spotify.com/artist/48Uz3wlAuTWxnvj4uXQPD2" // Corrected Spotify link
             target="_blank" // Open in a new tab

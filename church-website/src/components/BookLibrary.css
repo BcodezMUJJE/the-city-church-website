@@ -1,0 +1,213 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.library-app {
+  max-width: 130%; /* Increased width for larger screens */
+  margin: 0 auto;
+  padding: 30px; /* Increased padding */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(244, 155, 2, 0.846);
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 42px; /* Increased font size */
+  margin-bottom: 25px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  border-color: rgb(0, 0, 0);
+}
+
+.search-bar input {
+  width: 350px; /* Slightly wider input */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.search-bar button {
+  padding: 12px 24px;
+  margin-left: 10px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.search-bar button:hover {
+  background-color: orange;
+}
+
+/* Book List */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Increased book card size */
+  gap: 25px;
+}
+
+.book-card {
+  background-color: #fff;
+  padding: 25px; /* More padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(230, 147, 32, 0.15);
+  margin-bottom: 2.8rem;
+}
+.book-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border-color: orange;
+  box-shadow: 0 2px 4px rgba(220, 112, 11, 0.1);
+  text-align: center;
+}
+
+.book-image {
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.book-card h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.book-card .author {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.book-card .description {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Responsive Design */
+
+/* Tablets and Small Laptops */
+@media (max-width: 1024px) {
+  .library-app {
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  .search-bar input {
+    width: 300px;
+  }
+
+  .book-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .library-app {
+    padding: 15px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar input {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .search-bar button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .book-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .book-card h2 {
+    font-size: 22px;
+  }
+
+  .book-card .author {
+    font-size: 16px;
+  }
+
+  .book-card .description {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .book-list {
+    grid-template-columns: 1fr;
+  }
+
+  .book-card {
+    padding: 18px;
+  }
+
+  .book-card h2 {
+    font-size: 20px;
+  }
+
+  .book-card .author {
+    font-size: 14px;
+  }
+
+  .book-card .description {
+    font-size: 12px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1440px) {
+  .library-app {
+    max-width: 1600px; /* Increased max-width for large screens */
+  }
+
+  .book-list {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .book-card {
+    padding: 30px;
+  }
+
+  .book-card h2 {
+    font-size: 28px;
+  }
+
+  .book-card .author {
+    font-size: 20px;
+  }
+
+  .book-card .description {
+    font-size: 18px;
+  }
+}

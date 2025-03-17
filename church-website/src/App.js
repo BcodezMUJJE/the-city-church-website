@@ -15,6 +15,7 @@ import Tcg from './components/Tcg';
 import TermsOfService from './components/TermsOfService';
 import FitForLife from './components/fitforlife'; // Use lowercase
 import CityChurchKidsPage from './components/CityChurchKidsPage';
+import BookLibrary from './components/BookLibrary'; // Corrected import
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="term-of-service" element={<TermsOfService />} />
         <Route path="/fitforlife" element={<FitForLife />} />
         <Route path="/CityChurchKids" element={<CityChurchKidsPage />} />
+        <Route path="/bookLib" element={<BookLibrary />} />
       </Routes>
     </Router>
   );
