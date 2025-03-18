@@ -5,19 +5,19 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-  }
-  
-  .container {
-    max-width: 1200px;
+}
+
+.container {
+    max-width: 1690px;
     margin: auto;
     padding: 20px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-  }
-  
-  /* Header Styles */
-  .header {
+}
+
+/* Header Styles */
+.header {
     text-align: center;
     padding: 20px;
     background: #ff6f00;
@@ -25,107 +25,159 @@ body {
     font-size: 24px;
     font-weight: bold;
     border-radius: 10px 10px 0 0;
-  }
-  
-  /* Form Styles */
-  .form-group {
+}
+
+/* Styling for the form header */
+h2 {
+    font-size: 2.9rem; /* Adjust the font size */
+    font-weight: bold;
+    color: black; /* Dark color for text */
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.9rem; /* Adjust the font size */
+    font-weight: 600;
+    color: #ff6f00; /* Slightly lighter color */
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.form-group {
     margin: 15px 0;
-  }
-  
-  label {
+    margin-bottom: 2.0rem;
+}
+
+label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  input, select, textarea {
+}
+
+input, select, textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-  }
-  
-  button {
-    width: 100%;
+    margin-bottom: 1.7rem;
+}
+
+button {
+    width: 50%;
     padding: 10px;
     background: #ff6f00;
     border: none;
     color: white;
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 2.9rem;
     cursor: pointer;
     border-radius: 5px;
     transition: background 0.3s ease-in-out;
-  }
-  
-  button:hover {
-    background: #e65c00;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 1200px) {
+}
+
+button:hover {
+    background: #0b0b0b;
+    color: white;
+}
+
+/* Radio and Checkbox Group Styles */
+.form-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjusts space between the radio/checkbox groups */
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 10px; /* Adjusts space between each radio/checkbox item */
+}
+
+.radio-group label, .checkbox-group label {
+    display: flex;
+    align-items: center; /* Ensures the radio button/input and text are vertically aligned */
+    gap: 10px; /* Adds space between the radio button/input and its label text */
+    white-space: nowrap; /* Ensures the text doesn't wrap to the next line */
+    margin-top: .5rem;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1200px) {
     .container {
-      max-width: 1000px;
+        max-width: 1000px;
     }
-  }
-  
-  @media (max-width: 1024px) {
+}
+
+@media (max-width: 1024px) {
     .container {
-      padding: 15px;
+        padding: 15px;
     }
     .header {
-      font-size: 22px;
+        font-size: 22px;
     }
     input, select, textarea {
-      font-size: 14px;
+        font-size: 14px;
     }
     button {
-      font-size: 16px;
+        font-size: 16px;
     }
-  }
-  
-  @media (max-width: 900px) {
-    .container {
-      max-width: 750px;
+    .radio-group, .checkbox-group {
+        flex-direction: column; /* Stack radio/checkbox options vertically */
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 900px) {
     .container {
-      padding: 10px;
+        max-width: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
     }
     .header {
-      font-size: 20px;
+        font-size: 20px;
     }
     input, select, textarea {
-      font-size: 14px;
-      padding: 8px;
+        font-size: 14px;
+        padding: 8px;
     }
     button {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
-  
-  @media (max-width: 600px) {
-    .container {
-      max-width: 500px;
+    .radio-group, .checkbox-group {
+        flex-direction: column; /* Stack radio/checkbox options vertically */
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 600px) {
     .container {
-      padding: 5px;
+        max-width: 500px;
+    }
+    .radio-group, .checkbox-group {
+        flex-direction: column; /* Stack radio/checkbox options vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
     }
     .header {
-      font-size: 18px;
+        font-size: 18px;
     }
     input, select, textarea {
-      font-size: 12px;
-      padding: 6px;
+        font-size: 12px;
+        padding: 6px;
     }
     button {
-      font-size: 12px;
-      padding: 8px;
+        font-size: 12px;
+        padding: 8px;
     }
-  }
+    .radio-group, .checkbox-group {
+        flex-direction: column; /* Stack radio/checkbox options vertically */
+    }
+}
