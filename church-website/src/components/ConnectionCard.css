@@ -91,6 +91,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Adjusts space between the radio/checkbox groups */
+    margin-left: 29.5rem;
 }
 
 .radio-group, .checkbox-group {
