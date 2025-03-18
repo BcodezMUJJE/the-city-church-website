@@ -13,9 +13,10 @@ import { ServiceTimes } from './components/Time';
 import { RoundTableDetails } from './components/WeeklyRoundTable';
 import Tcg from './components/Tcg';
 import TermsOfService from './components/TermsOfService';
-import FitForLife from './components/fitforlife'; // Use lowercase
+import FitForLife from './components/fitforlife';
 import CityChurchKidsPage from './components/CityChurchKidsPage';
-import BookLibrary from './components/BookLibrary'; // Corrected import
+import BookLibrary from './components/BookLibrary';
+import ConnectionCard from './components/ConnectionCard';
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/fitforlife" element={<FitForLife />} />
         <Route path="/CityChurchKids" element={<CityChurchKidsPage />} />
         <Route path="/bookLib" element={<BookLibrary />} />
+        <Route path="/ConnectionCardLin" element={<ConnectionCard />} />
       </Routes>
     </Router>
   );
