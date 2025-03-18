@@ -54,7 +54,7 @@ function Footer() {
         </div>
         <div>
           <h4>RESOURCES</h4>
-          <a href="/">First Time Guests/Membership</a>
+          <a href="/ConnectionCardLin">First Time Guests/Membership</a>
           <a href="/bookLib">Books</a>
           <a
             href="https://open.spotify.com/artist/48Uz3wlAuTWxnvj4uXQPD2" // Corrected Spotify link
