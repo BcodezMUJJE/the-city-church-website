@@ -63,7 +63,7 @@ input, select, textarea {
     margin-bottom: 1.7rem;
 }
 
-textarea{
+textarea {
     height: 9rem;
 }
 
@@ -91,13 +91,17 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 10px; /* Adjusts space between the radio/checkbox groups */
-    margin-left: 29.5rem;
+    justify-content: center; /* Centers the form options */
+    margin: 0 auto; /* Centers the form options horizontally */
+    width: 100%;
 }
 
 .radio-group, .checkbox-group {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
     gap: 10px; /* Adjusts space between each radio/checkbox item */
+    justify-content: center; /* Centers the radio/checkbox items */
+    width: 100%;
 }
 
 .radio-group label, .checkbox-group label {
@@ -106,6 +110,16 @@ button:hover {
     gap: 10px; /* Adds space between the radio button/input and its label text */
     white-space: nowrap; /* Ensures the text doesn't wrap to the next line */
     margin-top: .5rem;
+}
+
+/* Make radio and checkbox items responsive */
+.radio-group input, .checkbox-group input {
+    width: auto; /* Make the radio/checkbox smaller to fit better on small screens */
+    margin-right: 10px; /* Adjust the margin for spacing */
+}
+
+.radio-group label, .checkbox-group label {
+    font-size: 1.2rem; /* Adjust font size for better readability */
 }
 
 /* Responsive Design for Smaller Screens */
@@ -130,6 +144,16 @@ button:hover {
     }
     .radio-group, .checkbox-group {
         flex-direction: column; /* Stack radio/checkbox options vertically */
+        align-items: center; /* Centers the radio/checkbox items */
+    }
+    .radio-group label, .checkbox-group label {
+        font-size: 1rem; /* Reduce font size for smaller screens */
+    }
+    .radio-group input, .checkbox-group input {
+        margin-right: 5px; /* Adjust the spacing for smaller screens */
+    }
+    .form-options {
+        margin-left: 0; /* Remove any excessive left margin */
     }
 }
 
@@ -155,6 +179,13 @@ button:hover {
     }
     .radio-group, .checkbox-group {
         flex-direction: column; /* Stack radio/checkbox options vertically */
+        align-items: center; /* Centers the radio/checkbox items */
+    }
+    .radio-group label, .checkbox-group label {
+        font-size: 1rem; /* Adjust font size */
+    }
+    .radio-group input, .checkbox-group input {
+        margin-right: 5px; /* Adjust margin for better alignment */
     }
 }
 
@@ -164,6 +195,10 @@ button:hover {
     }
     .radio-group, .checkbox-group {
         flex-direction: column; /* Stack radio/checkbox options vertically */
+        align-items: center; /* Centers the radio/checkbox items */
+    }
+    .radio-group label, .checkbox-group label {
+        font-size: 1rem; /* Adjust font size for readability */
     }
 }
 
@@ -184,5 +219,45 @@ button:hover {
     }
     .radio-group, .checkbox-group {
         flex-direction: column; /* Stack radio/checkbox options vertically */
+        align-items: center; /* Centers the radio/checkbox items */
+    }
+    .radio-group label, .checkbox-group label {
+        font-size: 1rem; /* Adjust font size */
+    }
+    .radio-group input, .checkbox-group input {
+        margin-right: 5px; /* Adjust margin for spacing */
+    }
+}
+
+/* Media Query for Screens Between 480px and 588px */
+@media (min-width: 480px) and (max-width: 588px) {
+    .container {
+        padding: 10px;
+        max-width: 580px; /* Adjust container width for this range */
+    }
+    .header {
+        font-size: 20px; /* Slightly smaller header size for this range */
+    }
+    input, select, textarea {
+        font-size: 13px; /* Adjust font size */
+        padding: 9px;
+    }
+    button {
+        font-size: 15px;
+        width: 60%; /* Adjust button size */
+    }
+    .radio-group, .checkbox-group {
+        flex-direction: column; /* Stack radio/checkbox options vertically */
+        align-items: center; /* Centers the radio/checkbox items */
+        width: 100%;
+    }
+    .radio-group label, .checkbox-group label {
+        font-size: 1rem; /* Adjust font size */
+    }
+    .radio-group input, .checkbox-group input {
+        margin-right: 5px; /* Adjust margin for spacing */
+    }
+    .form-options {
+        margin-left: 0; /* Remove excessive left margin */
     }
 }
