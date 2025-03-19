@@ -43,7 +43,7 @@ function Footer() {
         <div>
           <h4>REACH OUT</h4>
           <a href="/supportMission">Support A Mission</a>
-          <a href="/">Partner With Us</a>
+          <a href="/partnerWithUs">Partner With Us</a>
           <a href="/PrayerRequestForm">Need Prayer</a>
         </div>
         <div>

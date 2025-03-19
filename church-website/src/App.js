@@ -18,7 +18,8 @@ import CityChurchKidsPage from './components/CityChurchKidsPage';
 import BookLibrary from './components/BookLibrary';
 import ConnectionCard from './components/ConnectionCard';
 import NeedPrayer from './components/NeedPrayer'
-
+import SupportMission from './components/SupportMission';
+import PartnerWithUs from './components/PartnerWithUs';
 
 const App = () => {
   return (
@@ -41,6 +42,8 @@ const App = () => {
         <Route path="/bookLib" element={<BookLibrary />} />
         <Route path="/ConnectionCardLin" element={<ConnectionCard />} />
         <Route path="/PrayerRequestForm" element={<NeedPrayer />} />
+        <Route path="/supportMission" element={<SupportMission />} />
+        <Route path="/partnerWithUs" element={<PartnerWithUs />} />
       </Routes>
     </Router>
   );
