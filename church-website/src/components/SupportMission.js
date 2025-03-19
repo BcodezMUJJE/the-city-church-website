@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 
-const PrayerRequest = () => {
+const SupportMission = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    prayerRequest: "",
-    contactNeeded: "No", // Default to "No"
-    contactInfo: "",
+    missionName: "",
+    supportType: "",
+    email: "",
+    telephone: "",
+    contactPreference: "email", // Default to email
   });
 
   const handleChange = (e) => {
@@ -22,10 +23,11 @@ const PrayerRequest = () => {
     // Web3Forms integration
     const formDataToSend = new FormData();
     formDataToSend.append("access_key", "00bb38f1-38dc-4c70-b5ef-0867572bd0da");
-    formDataToSend.append("name", formData.name);
-    formDataToSend.append("prayerRequest", formData.prayerRequest);
-    formDataToSend.append("contactNeeded", formData.contactNeeded);
-    formDataToSend.append("contactInfo", formData.contactInfo);
+    formDataToSend.append("missionName", formData.missionName);
+    formDataToSend.append("supportType", formData.supportType);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("telephone", formData.telephone);
+    formDataToSend.append("contactPreference", formData.contactPreference);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -37,10 +39,11 @@ const PrayerRequest = () => {
       if (result.success) {
         alert("Form submitted successfully!");
         setFormData({
-          name: "",
-          prayerRequest: "",
-          contactNeeded: "N",
-          contactInfo: "",
+          missionName: "",
+          supportType: "",
+          email: "",
+          telephone: "",
+          contactPreference: "email",
         });
       } else {
         alert("Error submitting form. Please try again.");
@@ -53,75 +56,107 @@ const PrayerRequest = () => {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.heading}>Need Prayer?</h2>
+      <h2 style={styles.heading}>Support a Mission</h2>
       <form onSubmit={handleSubmit} style={styles.form}>
-        {/* Name Field */}
+        {/* Name of Mission Dropdown */}
         <div style={styles.formGroup}>
-          <label htmlFor="name" style={styles.label}>
-            Name (optional):
+          <label htmlFor="missionName" style={styles.label}>
+            Name of Mission:
           </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
+          <select
+            id="missionName"
+            name="missionName"
+            value={formData.missionName}
             onChange={handleChange}
             style={styles.input}
-            placeholder="Enter your name"
-          />
+            required
+          >
+            <option value="">Select a mission</option>
+            <option value="Mission 1">Mission 1</option>
+            <option value="Mission 2">Mission 2</option>
+            <option value="Mission 3">Mission 3</option>
+          </select>
         </div>
 
-        {/* Prayer Request Field */}
+        {/* Type of Support Dropdown */}
         <div style={styles.formGroup}>
-          <label htmlFor="prayerRequest" style={styles.label}>
-            Prayer Request:
+          <label htmlFor="supportType" style={styles.label}>
+            Type of Support:
           </label>
-          <textarea
-            id="prayerRequest"
-            name="prayerRequest"
-            value={formData.prayerRequest}
+          <select
+            id="supportType"
+            name="supportType"
+            value={formData.supportType}
             onChange={handleChange}
-            style={{ ...styles.input, height: "100px" }}
-            placeholder="Enter your prayer request"
+            style={styles.input}
+            required
+          >
+            <option value="">Select type of support</option>
+            <option value="financial">Financial</option>
+            <option value="non-financial">Non-Financial</option>
+          </select>
+        </div>
+
+        {/* Email Field */}
+        <div style={styles.formGroup}>
+          <label htmlFor="email" style={styles.label}>
+            Email:
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            style={styles.input}
+            placeholder="Enter your email"
             required
           />
         </div>
 
-        {/* Contact Needed Dropdown */}
+        {/* Telephone Number Field */}
         <div style={styles.formGroup}>
-          <label htmlFor="contactNeeded" style={styles.label}>
-            Need someone to contact you?
+          <label htmlFor="telephone" style={styles.label}>
+            Telephone Number:
           </label>
-          <select
-            id="contactNeeded"
-            name="contactNeeded"
-            value={formData.contactNeeded}
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            value={formData.telephone}
             onChange={handleChange}
             style={styles.input}
-          >
-            <option value="Y">Yes</option>
-            <option value="N">No</option>
-          </select>
+            placeholder="Enter your telephone number"
+            required
+          />
         </div>
 
-        {/* Contact Info Field (Conditional) */}
-        {formData.contactNeeded === "Y" && (
-          <div style={styles.formGroup}>
-            <label htmlFor="contactInfo" style={styles.label}>
-              Contact Info:
+        {/* Contact Preference Radio Buttons */}
+        <div style={styles.formGroup}>
+          <label style={styles.label}>How do you prefer to be contacted:</label>
+          <div style={styles.radioGroup}>
+            <label style={styles.radioLabel}>
+              <input
+                type="radio"
+                name="contactPreference"
+                value="email"
+                checked={formData.contactPreference === "email"}
+                onChange={handleChange}
+              />
+              Email
             </label>
-            <input
-              type="text"
-              id="contactInfo"
-              name="contactInfo"
-              value={formData.contactInfo}
-              onChange={handleChange}
-              style={styles.input}
-              placeholder="Enter your contact info"
-              required
-            />
+            <label style={styles.radioLabel}>
+              <input
+                type="radio"
+                name="contactPreference"
+                value="phone"
+                checked={formData.contactPreference === "phone"}
+                onChange={handleChange}
+              />
+              Phone
+            </label>
           </div>
-        )}
+        </div>
 
         {/* Submit Button */}
         <div style={styles.buttonContainer}>
@@ -140,7 +175,8 @@ const styles = {
     marginTop: "3rem",
     marginRight: "auto",
     marginLeft: "auto",
-    maxWidth: "1400px",
+    marginBottom: "3rem",
+    maxWidth: "900px",
     padding: "20px",
     backgroundColor: "#fff",
     borderRadius: "10px",
@@ -172,6 +208,15 @@ const styles = {
     borderRadius: "5px",
     border: "1px solid #ccc",
     fontSize: "16px", // Default font size
+  },
+  radioGroup: {
+    display: "flex",
+    gap: "20px", // Space between radio buttons
+  },
+  radioLabel: {
+    display: "flex",
+    alignItems: "center",
+    gap: "8px", // Space between radio button and label
   },
   buttonContainer: {
     display: "flex",
@@ -236,45 +281,6 @@ const styles = {
       fontSize: "12px", // Smaller font size for mobile
     },
   },
-
-  // Media Queries for Laptops and Desktops
-  "@media (min-width: 1024px)": {
-    container: {
-      maxWidth: "800px", // Wider container for laptops
-    },
-    heading: {
-      fontSize: "32px", // Larger font size for laptops
-    },
-    label: {
-      fontSize: "18px", // Larger font size for laptops
-    },
-    input: {
-      fontSize: "18px", // Larger font size for laptops
-    },
-    button: {
-      width: "40%", // Slightly narrower button for laptops
-      fontSize: "18px", // Larger font size for laptops
-    },
-  },
-
-  "@media (min-width: 1440px)": {
-    container: {
-      maxWidth: "1000px", // Wider container for desktops
-    },
-    heading: {
-      fontSize: "36px", // Larger font size for desktops
-    },
-    label: {
-      fontSize: "20px", // Larger font size for desktops
-    },
-    input: {
-      fontSize: "20px", // Larger font size for desktops
-    },
-    button: {
-      width: "30%", // Narrower button for desktops
-      fontSize: "20px", // Larger font size for desktops
-    },
-  },
 };
 
-export default PrayerRequest;
+export default SupportMission;

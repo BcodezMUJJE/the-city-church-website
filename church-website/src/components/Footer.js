@@ -42,14 +42,14 @@ function Footer() {
       <div className="bottom">
         <div>
           <h4>REACH OUT</h4>
-          <a href="/">Support A Mission</a>
+          <a href="/supportMission">Support A Mission</a>
           <a href="/">Partner With Us</a>
           <a href="/PrayerRequestForm">Need Prayer</a>
         </div>
         <div>
           <h4>MISSIONS</h4>
           <a href="/fitforlife">Fit for Life</a>
-          <a href="/">The City Leadership Institute</a>
+          <a href="/Cli">The City Leadership Institute</a>
           <a href="https://www.transformafricanministries.org/">Transform African Ministries</a>
         </div>
         <div>
