@@ -17,6 +17,7 @@ import FitForLife from './components/fitforlife';
 import CityChurchKidsPage from './components/CityChurchKidsPage';
 import BookLibrary from './components/BookLibrary';
 import ConnectionCard from './components/ConnectionCard';
+import NeedPrayer from './components/NeedPrayer'
 
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/CityChurchKids" element={<CityChurchKidsPage />} />
         <Route path="/bookLib" element={<BookLibrary />} />
         <Route path="/ConnectionCardLin" element={<ConnectionCard />} />
+        <Route path="/PrayerRequestForm" element={<NeedPrayer />} />
       </Routes>
     </Router>
   );
