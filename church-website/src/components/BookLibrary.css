@@ -7,7 +7,7 @@ body {
 }
 
 .library-app {
-  max-width: 130%; /* Increased width for larger screens */
+  max-width: 100%; /* Increased width for larger screens */
   margin: 0 auto;
   padding: 30px; /* Increased padding */
   background-color: #fff;
@@ -32,15 +32,17 @@ body {
 }
 
 .search-bar input {
-  width: 350px; /* Slightly wider input */
+  width: 500px; /* Slightly wider input */
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 18px;
+  height: 50px; /* Ensure consistent height */
 }
 
 .search-bar button {
-  padding: 12px 24px;
+  width: 150px; /* Adjusted width for button */
+  padding: 15px 24px;
   margin-left: 10px;
   background-color: rgb(0, 0, 0);
   color: #fff;
@@ -48,6 +50,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
+  height: 50px; /* Ensure consistent height */
 }
 
 .search-bar button:hover {

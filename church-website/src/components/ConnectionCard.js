@@ -3,6 +3,7 @@ import "./ConnectionCard.css";
 import Footer from "./Footer";
 
 const ConnectionCard = () => {
+  // eslint-disable-next-line 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
