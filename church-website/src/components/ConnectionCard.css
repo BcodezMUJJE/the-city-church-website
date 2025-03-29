@@ -11,34 +11,46 @@ body {
     max-width: 1690px;
     margin: auto;
     padding: 20px;
-    background: white;
+    background-image: url("../Assets/card.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    position: relative;
 }
 
 /* Header Styles */
 .header {
     text-align: center;
     padding: 20px;
-    background: #ff6f00;
+    background-color: transparent;
     color: white;
     font-size: 24px;
     font-weight: bold;
     border-radius: 10px 10px 0 0;
+    position: relative;
+    z-index: 1;
 }
 
-/* Styling for the form header */
+/* Text Elements with Shadow */
+h2, h3, label, .form-group {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
 h2 {
-    font-size: 2.9rem; /* Adjust the font size */
+    font-size: 2.9rem;
     font-weight: bold;
-    color: black; /* Dark color for text */
+    color: black;
     margin-bottom: 20px;
 }
 
 h3 {
-    font-size: 1.9rem; /* Adjust the font size */
+    font-size: 1.9rem;
     font-weight: 600;
-    color: #ff6f00; /* Slightly lighter color */
+    color: #ff6f00;
     margin-bottom: 30px;
 }
 
@@ -90,39 +102,38 @@ button:hover {
 .form-options {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px; /* Adjusts space between the radio/checkbox groups */
-    justify-content: center; /* Centers the form options */
-    margin: 0 auto; /* Centers the form options horizontally */
+    gap: 10px;
+    justify-content: center;
+    margin: 0 auto;
     width: 100%;
 }
 
 .radio-group, .checkbox-group {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 10px; /* Adjusts space between each radio/checkbox item */
-    justify-content: center; /* Centers the radio/checkbox items */
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
     width: 100%;
 }
 
 .radio-group label, .checkbox-group label {
     display: flex;
-    align-items: center; /* Ensures the radio button/input and text are vertically aligned */
-    gap: 10px; /* Adds space between the radio button/input and its label text */
-    white-space: nowrap; /* Ensures the text doesn't wrap to the next line */
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
     margin-top: .5rem;
 }
 
-/* Make radio and checkbox items responsive */
 .radio-group input, .checkbox-group input {
-    width: auto; /* Make the radio/checkbox smaller to fit better on small screens */
-    margin-right: 10px; /* Adjust the margin for spacing */
+    width: auto;
+    margin-right: 10px;
 }
 
 .radio-group label, .checkbox-group label {
-    font-size: 1.2rem; /* Adjust font size for better readability */
+    font-size: 1.2rem;
 }
 
-/* Responsive Design for Smaller Screens */
+/* Responsive Design */
 @media (max-width: 1200px) {
     .container {
         max-width: 1000px;
@@ -143,17 +154,14 @@ button:hover {
         font-size: 16px;
     }
     .radio-group, .checkbox-group {
-        flex-direction: column; /* Stack radio/checkbox options vertically */
-        align-items: center; /* Centers the radio/checkbox items */
+        flex-direction: column;
+        align-items: center;
     }
     .radio-group label, .checkbox-group label {
-        font-size: 1rem; /* Reduce font size for smaller screens */
+        font-size: 1rem;
     }
     .radio-group input, .checkbox-group input {
-        margin-right: 5px; /* Adjust the spacing for smaller screens */
-    }
-    .form-options {
-        margin-left: 0; /* Remove any excessive left margin */
+        margin-right: 5px;
     }
 }
 
@@ -166,6 +174,8 @@ button:hover {
 @media (max-width: 768px) {
     .container {
         padding: 10px;
+        background-size: contain;
+        background-position: top center;
     }
     .header {
         font-size: 20px;
@@ -178,27 +188,20 @@ button:hover {
         font-size: 14px;
     }
     .radio-group, .checkbox-group {
-        flex-direction: column; /* Stack radio/checkbox options vertically */
-        align-items: center; /* Centers the radio/checkbox items */
+        flex-direction: column;
+        align-items: center;
     }
     .radio-group label, .checkbox-group label {
-        font-size: 1rem; /* Adjust font size */
+        font-size: 1rem;
     }
     .radio-group input, .checkbox-group input {
-        margin-right: 5px; /* Adjust margin for better alignment */
+        margin-right: 5px;
     }
 }
 
 @media (max-width: 600px) {
     .container {
         max-width: 500px;
-    }
-    .radio-group, .checkbox-group {
-        flex-direction: column; /* Stack radio/checkbox options vertically */
-        align-items: center; /* Centers the radio/checkbox items */
-    }
-    .radio-group label, .checkbox-group label {
-        font-size: 1rem; /* Adjust font size for readability */
     }
 }
 
@@ -217,47 +220,22 @@ button:hover {
         font-size: 12px;
         padding: 8px;
     }
-    .radio-group, .checkbox-group {
-        flex-direction: column; /* Stack radio/checkbox options vertically */
-        align-items: center; /* Centers the radio/checkbox items */
-    }
-    .radio-group label, .checkbox-group label {
-        font-size: 1rem; /* Adjust font size */
-    }
-    .radio-group input, .checkbox-group input {
-        margin-right: 5px; /* Adjust margin for spacing */
-    }
 }
 
-/* Media Query for Screens Between 480px and 588px */
 @media (min-width: 480px) and (max-width: 588px) {
     .container {
         padding: 10px;
-        max-width: 580px; /* Adjust container width for this range */
+        max-width: 580px;
     }
     .header {
-        font-size: 20px; /* Slightly smaller header size for this range */
+        font-size: 20px;
     }
     input, select, textarea {
-        font-size: 13px; /* Adjust font size */
+        font-size: 13px;
         padding: 9px;
     }
     button {
         font-size: 15px;
-        width: 60%; /* Adjust button size */
-    }
-    .radio-group, .checkbox-group {
-        flex-direction: column; /* Stack radio/checkbox options vertically */
-        align-items: center; /* Centers the radio/checkbox items */
-        width: 100%;
-    }
-    .radio-group label, .checkbox-group label {
-        font-size: 1rem; /* Adjust font size */
-    }
-    .radio-group input, .checkbox-group input {
-        margin-right: 5px; /* Adjust margin for spacing */
-    }
-    .form-options {
-        margin-left: 0; /* Remove excessive left margin */
+        width: 60%;
     }
 }
