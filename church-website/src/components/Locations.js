@@ -14,14 +14,14 @@ export default function LocationsPage() {
     {
       name: "The City Church Kirinya Campus",
       address: "Kirinya, Kampala, Uganda",
-      phone: "+256 704 083043",
+      phone: "+256 787 464303",
       email: "info@thecitychurch.or.ug",
       description: "A growing campus with a focus on young adults and families.",
     },
     {
       name: "The City Church Iganga Campus",
       address: "Iganga – Join us every Sunday",
-      phone: "+256 704 083043",
+      phone: "+256 705 510002",
       email: "info@thecitychurch.or.ug",
       description: "Join our online community for worship and services wherever you are.",
     },
