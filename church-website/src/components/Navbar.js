@@ -6,6 +6,7 @@ import './Navbar.css';
 
 function Navbar() {
   const [click, setClick] = useState(false);
+  // eslint-disable-next-line
   const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
@@ -62,7 +63,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link to="/join-mc" className="nav-links-mobile" onClick={closeMobileMenu}>
-              Join MC
+              Join a <br /> Family  Group
             </Link>
           </li>
         </ul>

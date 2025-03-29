@@ -18,6 +18,7 @@
     width: 90%;
     margin: 0 auto;
     margin-bottom: 2.5rem;
+
   }
   
   .cards__wrapper {
@@ -26,6 +27,7 @@
   }
   
   .cards__items {
+    font-weight: normal;  /* This removes the bold effect */
     margin-bottom: 24px;
   }
   

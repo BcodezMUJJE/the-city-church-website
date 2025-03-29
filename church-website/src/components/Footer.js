@@ -16,7 +16,6 @@ function Footer() {
       <div className="top">
         <div>
           <h1>THE CITY CHURCH</h1>
-          <p>Come And Worship With Us</p>
         </div>
         {/* Social Media Icons */}
         <div className="social-icons">

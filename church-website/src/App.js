@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'; // Removed useNavigate import
 import Home from './components/pages/Home';
 import NewsAndEvents from './components/pages/NewsAndEvents';
 import Give from './components/pages/Give';
@@ -17,20 +17,34 @@ import FitForLife from './components/fitforlife';
 import CityChurchKidsPage from './components/CityChurchKidsPage';
 import BookLibrary from './components/BookLibrary';
 import ConnectionCard from './components/ConnectionCard';
-import NeedPrayer from './components/NeedPrayer'
+import NeedPrayer from './components/NeedPrayer';
 import SupportMission from './components/SupportMission';
 import PartnerWithUs from './components/PartnerWithUs';
+import Slida from './components/Slida';
+import Locations from './components/Locations';
+
+// ScrollToTop Component to handle scroll reset
+const ScrollToTop = () => {
+  const location = useLocation(); // Get the current route location
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top when route changes
+  }, [location]); // Runs whenever the route changes
+
+  return null; // This component doesn't render anything visible
+};
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />  {/* This ensures scroll to top on route change */}
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/news-and-events' element={<NewsAndEvents />} />
-        <Route path='/give' element={<Give />} /> 
+        <Route path='/give' element={<Give />} />
         <Route path='/contact-us' element={<ContactUs />} />
-        <Route path='/about-us' element={<AboutUs />} /> 
+        <Route path='/about-us' element={<AboutUs />} />
         <Route path='/join-mc' element={<JoinMc />} />
         <Route path="/Cli" element={<Cli />} />
         <Route path="/service-times" element={<ServiceTimes />} />
@@ -44,9 +58,11 @@ const App = () => {
         <Route path="/PrayerRequestForm" element={<NeedPrayer />} />
         <Route path="/supportMission" element={<SupportMission />} />
         <Route path="/partnerWithUs" element={<PartnerWithUs />} />
+        <Route path="/slida" element={<Slida />} />
+        <Route path="/location" element={<Locations />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;

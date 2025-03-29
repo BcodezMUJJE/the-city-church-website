@@ -24,15 +24,8 @@
 
 /* Heading Animation */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-        
-    }
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .hero-container h1 {
@@ -40,7 +33,6 @@
     font-weight: bold;
     text-align: center;
     color: #fff;
-    background: linear-gradient(to right, #dc7610, #dc7610);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -50,14 +42,23 @@
     animation: fadeIn 2s ease-in-out;
 }
 
+.hero-container h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
 /* Typing Animation for Paragraph */
 @keyframes typingEffect {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+    from { width: 0; }
+    to { width: 100%; }
 }
 
 .hero-container p {
@@ -70,98 +71,166 @@
     overflow: hidden;
     display: inline-block;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    animation: typingEffect 4s steps(40, end) forwards, blinkCursor 0.8s infinite;
     border-right: 2px solid #fff;
 }
 
-/* Cursor Blink Effect */
-@keyframes blinkCursor {
-    50% {
-        border-color: transparent;
-    }
+/* Button Container */
+.hero-btns {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row !important;
 }
 
 /* Button Styling */
-.hero-btns {
-    margin-top: 32px;
+.hero-btns .btn {
+    min-width: 250px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    flex: 0 1 auto;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: rgba(220, 118, 16, 0.9);
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.hero-btns .btn {
-    margin: 6px;
+.hero-btns .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(220, 118, 16, 1);
 }
 
 .fa-play-circle {
-    margin-left: 4px;
+    margin-left: 8px;
+}
+
+/* Location Cards */
+.location-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    width: 70%;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.location-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.location-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.location-card h3 {
+    color: #dc7610;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.location-card p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    white-space: normal;
+}
+
+.location-card a {
+    display: inline-block;
+    background-color: #dc7610;
+    color: white !important;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.location-card a:hover {
+    background-color: #b85e0d;
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 /* RESPONSIVENESS */
 
-/* Tablets (max-width: 960px) */
-@media screen and (max-width: 960px) {
-    .hero-container {
-        height: 100vh;
-        padding: 10px;
+@media screen and (max-width: 768px) {
+    .hero-container h1 {
+        font-size: 3rem;
     }
+    
+    .hero-container h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-btns {
+        gap: 15px;
+        flex-direction: column;
+    }
+    
+    .location-cards {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .location-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
 
+@media screen and (max-width: 480px) {
     .hero-container h1 {
         font-size: 2.5rem;
         padding: 15px;
     }
-
-    .hero-container p {
-        font-size: 18px;
+    
+    .hero-container h2 {
+        font-size: 1.8rem;
+        padding: 15px;
     }
-
-    .hero-btns {
-        margin-top: 20px;
-    }
-}
-
-/* Mobile Devices (max-width: 768px) */
-@media screen and (max-width: 768px) {
-    .hero-container {
-        height: 100vh;
-        padding: 5px;
-    }
-
-    .hero-container h1 {
-        font-size: 2rem;
-        padding: 12px;
-    }
-
+    
     .hero-container p {
         font-size: 16px;
     }
-
-    .btn {
-        width: 100%;
+    
+    .location-card {
+        padding: 1.5rem;
+    }
+    
+    .location-card h3 {
+        font-size: 1.3rem;
     }
 }
 
-/* Small Mobile Devices (max-width: 480px) */
-@media screen and (max-width: 480px) {
-    .hero-container {
-        height: 100vh;
-        padding: 10px;
-    }
-
+@media screen and (max-width: 360px) {
     .hero-container h1 {
-        font-size: 1.8rem;
-        padding: 10px;
+        font-size: 2rem;
     }
-
-    .hero-container p {
-        font-size: 14px;
-        width: 90%;
-        margin: auto;
+    
+    .hero-container h2 {
+        font-size: 1.5rem;
     }
-
-    .hero-btns {
-        margin-top: 15px;
-    }
-
-    .btn {
-        width: 100%;
-        padding: 10px;
+    
+    .location-card a {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
     }
 }

@@ -10,7 +10,7 @@ import imgKids from '../Assets/CityKidz.jpeg';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Check out What Happens At The City Church</h1>
+      <h1>Our Programs</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -23,7 +23,7 @@ function Cards() {
             <CardItem
               src={img2}
               text='Join us Thursdays, 5:30 – 7:00PM, in our missional communities to reflect on the past Sunday’s service.'
-              label='Round Table'
+              label='MC ku Round Table'
               path='/weekly-round-table'
             />
           </ul>
@@ -45,6 +45,12 @@ function Cards() {
               text='We invite all kids to The City Kids every Sunday for fun, learning, and growing in God’s love!'
               label='The City Kids'
               path='/CityChurchKids'
+            />
+            <CardItem
+              src={imgLeadership}
+              text='Transforming your business mindset for success unlock your potential with Fit for Life Trainings'
+              label='Fit For Life Trainings'
+              path='/fitforlife'
             />
           </ul>
         </div>
