@@ -6,7 +6,9 @@
   .cards h1 {
     text-align: center;
     font-size: 3.6rem;
+    margin-top: 3.rem;
     margin-bottom: 2rem;
+    line-height: 1.1;
     color: rgb(0, 0, 0);
   }
   
@@ -159,6 +161,7 @@
 @media only screen and (max-width: 480px) {
   .cards {
       padding: 1rem;
+      margin-top: 8rem;
   }
 
   .cards__container {
