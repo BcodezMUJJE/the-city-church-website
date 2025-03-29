@@ -1,6 +1,8 @@
 import React from 'react';
 import './Time.css';
-import Footer from "./Footer";  // Assuming Footer is in the same directory
+import Footer from "./Footer";
+import img1 from "../Assets/Tus1.jpg";
+import img2 from "../Assets/APPPP.jpg"
 
 const Header = () => {
   return (
@@ -13,8 +15,16 @@ const Header = () => {
 
 const ServiceTimes = () => {
   const services = [
-    { time: '8:00 AM - 10:00 AM', description: 'First Service' },
-    { time: '10:30 AM - 12:30 PM', description: 'Second Service' },
+    { 
+      time: '8:00 AM - 10:00 AM', 
+      description: 'First Service',
+      image: img2
+    },
+    { 
+      time: '10:30 AM - 12:30 PM', 
+      description: 'Second Service',
+      image: img1
+    },
   ];
 
   return (
@@ -23,8 +33,15 @@ const ServiceTimes = () => {
       <div className="services-grid">
         {services.map((service, index) => (
           <div key={index} className="service-card">
-            <h3>{service.time}</h3>
-            <p>{service.description}</p>
+            <img 
+              src={service.image} 
+              alt={service.description} 
+              className="service-image"
+            />
+            <div className="service-content">
+              <h3>{service.time}</h3>
+              <p>{service.description}</p>
+            </div>
           </div>
         ))}
       </div>

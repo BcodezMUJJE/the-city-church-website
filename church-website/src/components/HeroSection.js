@@ -8,7 +8,7 @@ function HeroSection() {
             <h1>You Belong Here</h1>
             <div className="hero-btns">
                 <button className="btns" onClick={() => window.open("https://www.youtube.com/@thecitychurch-luzira2585", "_blank")}>WATCH SERVICE <i className="far fa-play-circle" /></button>
-                <button className="btns" onClick={() => window.open("/join-mc", "_blank")}>Join a Family Group</button>
+                <button className="btns" onClick={() => window.open("/ConnectionCardLin", "_blank")}>First Time Guests</button>
             </div>
             <h2>Welcome To The City Church</h2>
             <p>A place where you come and feel welcome, stay and keep growing, go and reach out</p>
