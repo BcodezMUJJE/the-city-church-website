@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ContactUs.css';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin, FaPodcast } from 'react-icons/fa'; // Icons for social media platforms
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin, FaPodcast } from 'react-icons/fa';
 import Footer from "../Footer";
 
 function ContactUs() {
@@ -54,6 +54,9 @@ function ContactUs() {
           subject: '',
           message: '',
         });
+
+        // Redirect after successful submission
+        window.location.href = 'https://thecitychurchluzira.churchcenter.com/people/forms/938185';
       } else {
         setResult("Failed to send message. Please try again.");
       }
@@ -68,7 +71,6 @@ function ContactUs() {
     <>
       <section className="contact">
         <div className="contact-container">
-          {/* Contact Details Box */}
           <div className="contact-box">
             <h2>Get In Touch</h2>
             <p className="desc">
@@ -81,7 +83,6 @@ function ContactUs() {
                 <FaPhone className="icon" />
                 <p>Phone</p>
                 <p>+256 704 083043</p>
-                
               </div>
               <div className="detail">
                 <FaEnvelope className="icon" />
@@ -94,8 +95,6 @@ function ContactUs() {
                 <p>Kampala - Luzira</p>
               </div>
             </div>
-
-            {/* Social Media Section */}
             <div className="social-media-section">
               <h3>Follow Us</h3>
               <div className="social-icons">
@@ -117,8 +116,6 @@ function ContactUs() {
               </div>
             </div>
           </div>
-
-          {/* Contact Form Box */}
           <div className="contact-box">
             <form onSubmit={handleSubmit} id="contactForm">
               <h2>Get In <span>Touch</span></h2>
