@@ -6,6 +6,7 @@ import img2 from '../Assets/Round.jpeg';
 import imgYouth from '../Assets/TheChristGeneration.jpeg';  // Fixed path
 import imgLeadership from '../Assets/Bill.jpeg';
 import imgKids from '../Assets/CityKidz.jpeg';
+import imgFitForLife from '../Assets/training.jpg';
 
 function Cards() {
   return (
@@ -47,7 +48,7 @@ function Cards() {
               path='/CityChurchKids'
             />
             <CardItem
-              src={imgLeadership}
+              src={imgFitForLife}
               text='Transforming your business mindset for success unlock your potential with Fit for Life Trainings'
               label='Fit For Life Trainings'
               path='/fitforlife'
