@@ -54,6 +54,9 @@ const PartnerWithUs = () => {
           frequency: "",
           contactPreference: "email",
         });
+
+        // Redirect to the partnership form link after successful submission
+        window.location.href = "https://thecitychurchluzira.churchcenter.com/people/forms/938160"; // Replace with the actual form URL
       } else {
         alert("Error submitting form. Please try again.");
       }
