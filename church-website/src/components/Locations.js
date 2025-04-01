@@ -5,7 +5,7 @@ import "./Location.css";
 export default function LocationsPage() {
   const locations = [
     {
-      name: "City Church Main Campus",
+      name: "The City Church Luzira Campus",
       address: "Kitintale-Luzira, Kampala, Uganda",
       phone: "+256 704 083043",
       email: "info@thecitychurch.or.ug",

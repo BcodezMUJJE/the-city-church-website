@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './JoinMc.css'; // Import the CSS file
-import Footer from '../Footer'; // Import the Footer component
+import './JoinMc.css';
+import Footer from '../Footer';
 
 function JoinMc() {
   const [formData, setFormData] = useState({
@@ -34,7 +34,7 @@ function JoinMc() {
     formDataToSend.append("phone", formData.phone);
     formDataToSend.append("preferredCommunity", formData.preferredCommunity);
     formDataToSend.append("comments", formData.comments);
-    formDataToSend.append("label", "Joining Missional Community"); // Add the label here
+    formDataToSend.append("label", "Joining Missional Community");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -53,6 +53,10 @@ function JoinMc() {
           preferredCommunity: '',
           comments: '',
         });
+        
+        // Added redirect line
+        window.location.href = 'https://thecitychurchluzira.churchcenter.com/people/forms/938187';
+        
       } else {
         setResult("Failed to submit. Please try again.");
       }

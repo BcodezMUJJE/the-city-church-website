@@ -70,7 +70,7 @@ function ContactUs() {
         <div className="contact-container">
           {/* Contact Details Box */}
           <div className="contact-box">
-            <h2>Let's Connect</h2>
+            <h2>Get In Touch</h2>
             <p className="desc">
               At The City Church, we believe in open communication and building a strong community.  
               We encourage you to ask any questions you have – no matter how big or small. We're here to support 
