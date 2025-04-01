@@ -5,6 +5,7 @@
   padding: 2rem;
   background: #f4f4f4;
   border: 1px solid #ddd;
+  margin-bottom: 3rem;
 }
 
 /* Hero Section */
@@ -153,6 +154,7 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3rem;
 }
 
 .application-form h2 {

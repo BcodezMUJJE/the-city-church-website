@@ -42,6 +42,8 @@ const PrayerRequest = () => {
           contactNeeded: "N",
           contactInfo: "",
         });
+        // Redirect to the specified link after successful submission
+        window.location.href = "https://thecitychurchluzira.churchcenter.com/people/forms/938154";
       } else {
         alert("Error submitting form. Please try again.");
       }

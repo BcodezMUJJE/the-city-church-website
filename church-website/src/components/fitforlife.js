@@ -26,6 +26,9 @@ const FitForLife = () => {
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset(); // Reset the form after successful submission
+      
+      // Redirect to the specified link after successful submission
+      window.location.href = "https://thecitychurchluzira.churchcenter.com/people/forms/938149";
     } else {
       console.log("Error", data);
       setResult(data.message);
@@ -108,7 +111,7 @@ const styles = {
     borderRadius: '8px',
   },
   h2: {
-    color: 'black', // Green color for h2 headings
+    color: 'black',
   },
   list: {
     listStyleType: 'none',
@@ -167,7 +170,6 @@ const styles = {
 
   // Media Queries for Responsive Design
   '@media (max-width: 1200px)': {
-    // MacBook Pro and larger laptops
     app: {
       padding: '15px',
     },
@@ -180,7 +182,6 @@ const styles = {
   },
 
   '@media (max-width: 1024px)': {
-    // iPad Pro and smaller laptops
     app: {
       padding: '10px',
     },
@@ -199,7 +200,6 @@ const styles = {
   },
 
   '@media (max-width: 768px)': {
-    // iPad and tablets
     app: {
       padding: '10px',
     },
@@ -218,7 +218,6 @@ const styles = {
   },
 
   '@media (max-width: 480px)': {
-    // iPhone and Android phones
     app: {
       padding: '5px',
     },
@@ -240,7 +239,6 @@ const styles = {
   },
 
   '@media (max-width: 320px)': {
-    // Smaller phones (e.g., iPhone 5/SE)
     app: {
       padding: '5px',
     },
