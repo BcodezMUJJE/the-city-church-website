@@ -88,7 +88,7 @@
 
 /* Button Styling */
 .hero-btns .btn {
-    min-width: 250px;
+    min-width: 150px;
     padding: 15px 25px;
     font-size: 18px;
     font-weight: bold;
@@ -142,7 +142,7 @@
 }
 
 .location-card h3 {
-    color: #dc7610;
+    color: #fa8108;
     font-size: clamp(1.3rem, 2vw, 1.8rem);
     margin-bottom: 1rem;
     font-weight: 700;
@@ -150,7 +150,7 @@
 }
 
 .location-card p {
-    color: #333;
+    color: #000000;
     font-size: clamp(0.9rem, 1.5vw, 1.1rem);
     line-height: 1.6;
     margin-bottom: 1.5rem;
@@ -159,7 +159,7 @@
 
 .location-card a {
     display: inline-block;
-    background-color: #dc7610;
+    background-color: #fa8108;
     color: white !important;
     padding: clamp(0.6rem, 1.5vw, 0.8rem) clamp(1rem, 2vw, 1.5rem);
     border-radius: 25px;
@@ -234,41 +234,6 @@
     }
 }
 
-@media screen and (max-width: 480px) {
-    .hero-container h1 {
-        font-size: 2.5rem;
-        padding: 15px;
-    }
-    
-    .hero-container h2 {
-        font-size: 1.8rem;
-        padding: 15px;
-    }
-    
-    .hero-container p {
-        font-size: 16px;
-    }
-    
-    .location-cards {
-        width: 100%;
-        padding: 1rem 0.5rem;
-    }
-    
-    .location-card {
-        padding: 1.2rem;
-        border-radius: 12px;
-        margin: 2rem 0;
-    }
-    
-    .location-card h3 {
-        font-size: 1.4rem;
-    }
-    
-    .location-card p {
-        font-size: 0.95rem;
-    }
-}
-
 @media screen and (max-width: 375px) {
     .hero-container h1 {
         font-size: 2rem;
@@ -288,6 +253,129 @@
     
     .location-card a {
         padding: 0.7rem 1.2rem;
+    }
+}
+/* Ultra Small Devices (phones under 360px) */
+@media screen and (max-width: 360px) {
+    .hero-container {
+        height: auto;
+        min-height: 100vh;
+        padding: 10px;
+    }
+    
+    .hero-container h1 {
+        font-size: 1.8rem;
+        padding: 10px;
+        margin-top: 2rem;
+    }
+    
+    .hero-container h2 {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+    
+    .hero-container p {
+        font-size: 14px;
+        white-space: normal;
+        border-right: none;
+        display: block;
+        margin: 1rem 0;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 1.5rem;
+    }
+    
+    .hero-btns .btn {
+        width: 100%;
+        max-width: 250px;
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+    
+    .location-cards {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+        gap: 1rem;
+        margin: 1.5rem auto;
+    }
+    
+    .location-card {
+        padding: 1rem;
+        min-height: auto;
+    }
+    
+    .location-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .location-card p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .location-card a {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Landscape Phones */
+@media screen and (max-width: 640px) and (orientation: landscape) {
+    .hero-container {
+        height: auto;
+        padding: 2rem 0.5rem;
+    }
+    
+    .hero-container h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-container h2 {
+        font-size: 1.6rem;
+    }
+    
+    .hero-btns {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .hero-btns .btn {
+        min-width: 120px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .location-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Fix for paragraph animation on small screens */
+@media screen and (max-width: 480px) {
+    .hero-container p {
+        animation: none;
+        white-space: normal;
+        border-right: none;
+        display: block;
+        overflow: visible;
+        width: auto;
+    }
+}
+
+/* Button focus states for accessibility */
+.hero-btns .btn:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+/* Prevent hover effects on touch devices */
+@media (hover: none) {
+    .hero-btns .btn:hover {
+        transform: none;
+        box-shadow: none;
     }
 }
 
