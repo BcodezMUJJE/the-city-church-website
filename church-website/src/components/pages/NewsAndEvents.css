@@ -1,84 +1,160 @@
-/* App.css */
+/* ==========================================================================
+   Base Styles & Container
+   ========================================================================== */
 .news-and-events {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .news-and-events h1 {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 40px;
-    font-size: 2.5em;
-  }
-  
-  .news-section, .events-section {
-    margin-bottom: 40px;
-  }
-  
-  .news-section h2, .events-section h2 {
-    color: #e67e22;
-    margin-bottom: 20px;
-    font-size: 2em;
-  }
-  
-  .news-list, .events-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .news-card, .event-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: calc(33.333% - 20px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .news-card:hover, .event-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .news-card h3, .event-card h3 {
-    margin: 0 0 10px;
-    color: #2c3e50;
-    font-size: 1.5em;
-  }
-  
-  .news-card .date, .event-card .date {
-    color: #777;
-    font-size: 0.9em;
-    margin-bottom: 10px;
-  }
-  
-  .news-card .description, .event-card .description {
-    color: #555;
-    margin-bottom: 15px;
-    font-size: 1em;
-    line-height: 1.5;
-  }
-  
-  .news-card .read-more, .event-card .register-now {
-    color: #e67e22;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-  }
-  
-  .news-card .read-more:hover, .event-card .register-now:hover {
-    text-decoration: underline;
-  }
+  max-width: 1690px;
+  margin: 0 auto 2rem auto; /* Consistent margin units */
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  /* QR Code Container */
+.news-and-events h1 {
+  text-align: center;
+  color: #2c3e50; /* Dark Blue/Grey */
+  margin-bottom: 40px;
+  font-size: 2.5em;
+}
+
+/* ==========================================================================
+   Sections (News & Events)
+   ========================================================================== */
+.news-section,
+.events-section,
+.tusinze-fest-section { /* Added tusinze section */
+  margin-bottom: 40px;
+  width: 100%; /* Ensure sections take full width */
+}
+
+.news-section h2,
+.events-section h2 {
+  color: #e67e22; /* Orange */
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+/* ==========================================================================
+   Card Lists (Using Grid)
+   ========================================================================== */
+.news-list,
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px;
+}
+
+/* ==========================================================================
+   Card Base Styles
+   ========================================================================== */
+.news-card,
+.event-card,
+.tusinze-fest-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Take full width within grid column */
+  padding: 0; /* Remove padding from card itself */
+  overflow: hidden; /* Needed for image container border-radius */
+}
+
+.tusinze-fest-card {
+   display: flex; /* Allow flex direction for content ordering */
+   flex-direction: column;
+}
+
+.news-card:hover,
+.event-card:hover,
+.tusinze-fest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+   Card Image Styles
+   ========================================================================== */
+.card-image-container {
+  width: 100%;
+  height: 1200px; /* Default height */
+  overflow: hidden;
+  /* border-radius applied by parent card */
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the area, might crop */
+  display: block; /* Remove extra space below image */
+  transition: transform 0.3s ease;
+}
+
+/* Image zoom on card hover */
+.news-card:hover .card-image,
+.event-card:hover .card-image,
+.tusinze-fest-card:hover .card-image {
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   Card Content Styles
+   ========================================================================== */
+.card-content {
+  padding: 20px; /* Padding moved inside content area */
+}
+
+.news-card h3,
+.event-card h3,
+.tusinze-fest-card h3 {
+  margin: 0 0 10px 0; /* Adjusted margin for inside content */
+  color: #2c3e50;
+  font-size: 1.5em;
+}
+
+.news-card .date,
+.event-card .date,
+.tusinze-fest-card .date { /* Added tusinze date */
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  display: block; /* Ensure it takes its own line */
+}
+
+.tusinze-fest-card .location { /* Added tusinze location */
+  color: #777;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.news-card .description,
+.event-card .description,
+.tusinze-fest-card .description { /* Added tusinze description */
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.news-card .read-more,
+.event-card .register-now {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.news-card .read-more:hover,
+.event-card .register-now:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   QR Code Styles
+   ========================================================================== */
 .qr-code-container {
   text-align: center;
   margin-top: 20px;
@@ -99,15 +175,22 @@
   color: #555;
 }
 
-/* Registration Form Styles */
-.registration-form {
-  max-width: 900px;
+/* ==========================================================================
+   Form Styles (Registration & Access Key)
+   ========================================================================== */
+.registration-form,
+.access-key-form {
+  max-width: 900px; /* Registration form can be wider */
   margin: 20px auto;
   padding: 25px;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border: 1px solid #e0e0e0;
+}
+
+.access-key-form {
+  max-width: 400px; /* Access key form is narrower */
 }
 
 .registration-form h3 {
@@ -117,123 +200,12 @@
   color: #333;
 }
 
-.registration-form .form-group {
-  margin-bottom: 20px;
-}
-
-.registration-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 14px;
-  color: #555;
-  font-weight: 500;
-}
-
-.registration-form input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
-  box-sizing: border-box;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.registration-form input:focus {
-  border-color: #9ea2a2;
-  outline: none;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
-}
-
-.registration-form .submit-button {
-  width: 100%;
-  padding: 12px;
-  background-color: #ff9d00;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.registration-form .submit-button:hover {
-  background-color: #ff8e04;
-}
-
-/* Tusinze Fest Section */
-.tusinze-fest-section {
-  margin-top: 40px;
-  width: 100%;
-}
-
-.tusinze-fest-card {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-}
-
-.tusinze-fest-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.tusinze-fest-card h3 {
-  margin: 0 0 10px;
-  color: #2c3e50;
-  font-size: 1.5em;
-}
-
-.tusinze-fest-card .date {
-  color: #777;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-}
-
-.tusinze-fest-card .location {
-  color: #777;
-  font-size: 0.9em;
-  margin-bottom: 10px;
-}
-
-.tusinze-fest-card .description {
-  color: #555;
-  margin-bottom: 15px;
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-/* Adjustments for News and Events Cards */
-.news-list, .events-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px;
-}
-
-.news-card, .event-card {
-  width: 100%; /* Full width for each card */
-}
-
-/* Access Key Form */
-.access-key-form {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 25px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e0e0e0;
-}
-
+.registration-form .form-group,
 .access-key-form .form-group {
   margin-bottom: 20px;
 }
 
+.registration-form label,
 .access-key-form label {
   display: block;
   margin-bottom: 8px;
@@ -242,6 +214,7 @@
   font-weight: 500;
 }
 
+.registration-form input,
 .access-key-form input {
   width: 100%;
   padding: 12px;
@@ -252,16 +225,22 @@
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.registration-form input:focus {
+  border-color: #9ea2a2; /* Adjusted focus color */
+  outline: none;
+  box-shadow: 0 0 8px rgba(158, 162, 162, 0.3); /* Adjusted focus shadow */
+}
+
 .access-key-form input:focus {
-  border-color: #007bff;
+  border-color: #007bff; /* Blue focus for access key */
   outline: none;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
 }
 
+.registration-form .submit-button,
 .access-key-form .submit-button {
   width: 100%;
   padding: 12px;
-  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 8px;
@@ -271,59 +250,69 @@
   transition: background-color 0.3s ease;
 }
 
-.access-key-form .submit-button:hover {
-  background-color: #b3b000;
+/* Specific Button Colors */
+.registration-form .submit-button {
+  background-color: #ff9d00; /* Orange */
+}
+.registration-form .submit-button:hover {
+  background-color: #ff8e04; /* Darker Orange */
 }
 
-/* Mobile Responsiveness */
+.access-key-form .submit-button {
+  background-color: #007bff; /* Blue */
+}
+.access-key-form .submit-button:hover {
+  background-color: #0056b3; /* Darker Blue */
+  /* background-color: #b3b000; /* Original yellow hover - choose one */
+}
+
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+/* Tablets and Smaller Laptops (max-width: 768px) */
 @media (max-width: 768px) {
   .news-list, .events-list {
-    grid-template-columns: 1fr; /* One column on mobile */
+    grid-template-columns: 1fr; /* One column */
   }
 
-  .tusinze-fest-card {
-    padding: 15px;
+  .news-and-events h1 { font-size: 2em; }
+  .news-section h2, .events-section h2 { font-size: 1.6em; }
+  .news-list, .events-list { gap: 15px; }
+
+  .news-card, .event-card, .tusinze-fest-card {
+    /* Padding is handled by .card-content */
   }
+
+  /* Image and Content Padding adjustments from Block 1 */
+  .card-image-container { height: 180px; }
+  .card-content { padding: 15px; }
 }
-  
-  /* For mobile devices (screen width less than 768px) */
-@media (max-width: 768px) {
-    .news-card, .event-card {
-      width: 100%; /* 1 card per row */
-    }
-  
-    .news-and-events h1 {
-      font-size: 2em;
-    }
-  
-    .news-section h2, .events-section h2 {
-      font-size: 1.6em;
-    }
-  
-    .news-list, .events-list {
-      gap: 15px;
-    }
-  
-    .news-card, .event-card {
-      padding: 15px;
-    }
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .news-and-events { padding: 15px; }
+  .news-and-events h1 { font-size: 1.8em; }
+  .news-section h2, .events-section h2 { font-size: 1.4em; }
+
+  .news-card h3,
+  .event-card h3,
+  .tusinze-fest-card h3 {
+    font-size: 1.3em;
+    /* margin: 10px 0 8px; /* Apply margin inside .card-content if needed */
   }
-  
-  /* For very small mobile devices (screen width less than 480px) */
-  @media (max-width: 480px) {
-    .news-and-events h1 {
-      font-size: 1.8em;
-    }
-  
-    .news-section h2, .events-section h2 {
-      font-size: 1.4em;
-    }
-  
-    .news-card h3, .event-card h3 {
-      font-size: 1.3em;
-    }
-  
-    .news-card .description, .event-card .description {
-      font-size: 0.9em;
-    }
+
+  .news-card .description,
+  .event-card .description,
+  .tusinze-fest-card .description {
+    font-size: 0.9em;
   }
+
+  /* Image and Content Padding adjustments from Block 1 */
+  .card-image-container { height: 150px; }
+  .card-content { padding: 12px; }
+
+  .registration-form, .access-key-form { padding: 20px; }
+  .registration-form h3 { font-size: 20px; }
+}

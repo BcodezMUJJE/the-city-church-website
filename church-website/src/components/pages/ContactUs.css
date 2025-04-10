@@ -1,34 +1,35 @@
 /* ContactUs.css */
 .contact {
   max-width: 1500px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 2rem auto 2.5rem auto; /* Use consistent units */
+  padding: 25px; /* Consistent padding */
   font-family: 'Arial', sans-serif;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2.5rem;
-  margin-top: 2.0rem;
 }
 
 .contact-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 40px; /* Space between boxes */
 }
 
 .contact-box {
-  flex: 1;
-  min-width: 300px;
+  flex: 1; /* Each box tries to take equal space */
+  min-width: 300px; /* Minimum width before wrapping */
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flex for internal alignment */
+  flex-direction: column; /* Stack content vertically */
 }
 
 .contact-box h2 {
   font-size: 2em;
-  color: #2c3e50;
+  color: #2c3e50; /* Dark Blue/Grey */
+  margin-top: 0; /* Remove default margin */
   margin-bottom: 20px;
 }
 
@@ -36,51 +37,58 @@
   color: #555;
   font-size: 1em;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 25px; /* Increased space */
 }
 
+/* Contact Details Section (Left Box) */
 .contact-details {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px; /* Increased gap */
+  margin-bottom: 30px; /* Space below details */
 }
 
 .detail {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items: flex-start; /* Align icon to top of text */
+  gap: 15px; /* Increased gap */
 }
 
 .detail .icon {
-  font-size: 1.5em;
-  color: #e67e22;
+  font-size: 1.4em; /* Slightly smaller icon */
+  color: #e67e22; /* Orange */
+  margin-top: 3px; /* Align icon slightly better with text */
 }
 
 .detail p {
   margin: 0;
   color: #555;
   font-size: 1em;
+  line-height: 1.4; /* Adjust line height */
 }
 
-.detail p:first-of-type {
+.detail p:first-of-type { /* The label like "Phone", "Email" */
   font-weight: bold;
   color: #2c3e50;
+  margin-bottom: 2px; /* Small space below label */
 }
 
-/* Social Media Section */
+/* Social Media Section (Left Box) */
 .social-media-section {
-  margin-top: 30px;
+  margin-top: auto; /* Push to bottom if left box content is short */
+  padding-top: 20px; /* Add some space above */
 }
 
 .social-media-section h3 {
   color: #2c3e50;
   font-size: 1.5em;
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* Increased space */
 }
 
 .social-icons {
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap; /* Allow icons to wrap */
+  gap: 20px; /* Increased gap */
 }
 
 .social-icons a {
@@ -90,55 +98,54 @@
 }
 
 .social-icons a:hover {
-  color: #e67e22;
-  transform: translateY(-5px);
+  color: #e67e22; /* Orange */
+  transform: translateY(-3px); /* Slightly more lift */
 }
 
 .social-icons .icon {
-  font-size: 2em;
+  font-size: 1.8em; /* Slightly smaller social icons */
 }
 
-/* Contact Form Styles */
-#contactForm {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* Styles for the Right Box (Connect Box) */
+.connect-box {
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text */
 }
 
-.field-box {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+.connect-box .desc {
+    margin-bottom: 30px; /* More space before button */
 }
 
-.field-box input,
-.field-box textarea {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1em;
-  outline: none;
-}
-
-.field-box textarea {
-  resize: vertical;
-  min-height: 150px;
-}
-
+/* Button Styles (Applied to <a> tag now) */
 .btn {
-  padding: 4px 20px;
-  background-color: #e67e22;
+  display: inline-block; /* Make the anchor behave like a button */
+  padding: 12px 25px; /* Adjusted padding */
+  background-color: #e67e22; /* Orange */
   color: #fff;
   border: none;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 1.1em; /* Slightly larger text */
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove underline from link */
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: center; /* Center button if parent is flex column */
 }
 
 .btn:hover {
-  background-color: #d35400;
+  background-color: #000000; /* Darker Orange */
+  transform: translateY(-2px); /* Subtle lift */
 }
+
+.btn:active {
+    transform: translateY(0); /* Press down effect */
+}
+
+/* Removed Styles (No longer needed) */
+/* #contactForm, .field-box, .field-box input, */
+/* .field-box textarea, .result-message { ... } */
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -147,7 +154,8 @@
   }
 
   .contact-box {
-    width: 100%;
+    width: 100%; /* Take full width when stacked */
+    min-width: unset; /* Remove min-width */
   }
 
   .contact-box h2 {
@@ -161,9 +169,21 @@
   .social-icons .icon {
     font-size: 1.8em;
   }
+
+  .connect-box {
+      text-align: center; /* Ensure text remains centered */
+  }
 }
 
 @media (max-width: 480px) {
+  .contact {
+      padding: 15px;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+  }
+  .contact-box {
+      padding: 20px;
+  }
   .contact-box h2 {
     font-size: 1.6em;
   }
@@ -171,8 +191,20 @@
   .detail p {
     font-size: 0.9em;
   }
+   .detail .icon {
+    font-size: 1.1em;
+  }
 
   .social-icons .icon {
     font-size: 1.5em;
   }
+   .social-icons {
+       justify-content: center; /* Center social icons */
+       gap: 15px;
+   }
+
+   .btn {
+       padding: 10px 20px;
+       font-size: 1em;
+   }
 }

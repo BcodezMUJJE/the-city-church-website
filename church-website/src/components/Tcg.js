@@ -1,14 +1,11 @@
 import React from 'react';
-import './Tcg.css'; // Make sure you have your CSS for styling
-import Footer from './Footer'; // Assuming you have a Footer component
-import imgYouth from '../Assets/TheChristGeneration.jpeg'; // Fixed path for the image
+import './Tcg.css';
+import Footer from './Footer';
+import imgYouth from '../Assets/TheChristGeneration.jpeg';
 
 const TCGPage = () => {
-  const membershipFormLink = "https://thecitychurchluzira.churchcenter.com/people/forms/938180";
-
-  const handleRedirect = (event) => {
-    event.preventDefault(); // Prevent any unwanted behavior
-    window.location.href = membershipFormLink; // Redirect to the form
+  const handleJoinClick = () => {
+    window.location.href = "https://thecitychurchluzira.churchcenter.com/people/forms/938180";
   };
 
   return (
@@ -57,46 +54,23 @@ const TCGPage = () => {
       <section className="tcg-join-us">
         <h2>Join Us!</h2>
         <p>If you're a young person looking for a place to belong, grow, and serve, we would love to have you be a part of TCG.</p>
-        <form onSubmit={handleRedirect} className="tcg-contact-form">
-          <div className="form-group">
-            <label htmlFor="name">Your Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="email">Your Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="message">Why do you want to join TCG?</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-
-          <button type="submit" className="submit-btn">Join Us</button>
-        </form>
+        <button 
+          onClick={handleJoinClick} 
+          className="submit-btn"
+        >
+          Join TCG Now
+        </button>
       </section>
 
       <section className="tcg-contact">
         <h2>Contact Us</h2>
-        <form onSubmit={handleRedirect}>
-          <div className="form-group">
-            <label htmlFor="name">Your Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          
-          <div className="form-group">
-            <label htmlFor="email">Your Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="message">Your Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-
-          <button type="submit">Submit Form</button>
-        </form>
+        <p>Have questions? Reach out to our TCG leadership team:</p>
+        <button 
+          onClick={handleJoinClick} 
+          className="submit-btn"
+        >
+          Contact TCG
+        </button>
       </section>
 
       <Footer />
