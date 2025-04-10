@@ -46,14 +46,15 @@
 }
 
 .submit-button:hover {
-  background-color: #e67e22;
+  background-color:rgb(3, 3, 3);
+  color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgb(249, 150, 2);
 }
 
 .submit-button:active {
   transform: translateY(0);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgb(236, 223, 223);
 }
 
 /* Responsive Design */

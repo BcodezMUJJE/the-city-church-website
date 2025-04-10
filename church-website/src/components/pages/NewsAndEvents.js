@@ -2,16 +2,17 @@ import React from 'react';
 import '../../App.css';
 import "./NewsAndEvents.css";
 import Footer from '../Footer';
-import NewsImage1 from '../../Assets/royalWomen.jpg'; // Add your image paths
+import NewsImage1 from '../../Assets/royalWomen.jpg';
+import NewsImage2 from '../../Assets/sunday.jpeg';
 
 function NewsAndEvents() {
   const news = [
     { 
       id: 1, 
-      title: "New Sermon Series: Manifesting The Kingdom", 
-      date: "March 15, 2025",
+      title: "New Sermon Series: Dynamic Of Manifesting The Kingdom Of God", 
+      date: "April 7, 2025",
       description: "Join us this Sunday as we begin a new sermon series on living a life of grace and forgiveness.",
-      image: NewsImage1
+      image: NewsImage2
     },
     { 
       id: 2, 
