@@ -1,3 +1,5 @@
+/*
+
 import React, { useState } from "react";
 
 const PartnerWithUs = () => {
@@ -82,7 +84,7 @@ const PartnerWithUs = () => {
         partner with us?
       </p>
       <form onSubmit={handleSubmit} style={styles.form}>
-        {/* Partner Type Dropdown */}
+        
         <div style={styles.formGroup}>
           <label htmlFor="partnerType" style={styles.label}>
             Partner Type:
@@ -101,7 +103,7 @@ const PartnerWithUs = () => {
           </select>
         </div>
 
-        {/* Name Field */}
+        
         <div style={styles.formGroup}>
           <label htmlFor="name" style={styles.label}>
             Name:
@@ -118,7 +120,7 @@ const PartnerWithUs = () => {
           />
         </div>
 
-        {/* Email Field */}
+        
         <div style={styles.formGroup}>
           <label htmlFor="email" style={styles.label}>
             Email Address:
@@ -135,7 +137,7 @@ const PartnerWithUs = () => {
           />
         </div>
 
-        {/* Telephone Number Field */}
+        
         <div style={styles.formGroup}>
           <label htmlFor="telephone" style={styles.label}>
             Telephone Number:
@@ -152,7 +154,6 @@ const PartnerWithUs = () => {
           />
         </div>
 
-        {/* Location Field */}
         <div style={styles.formGroup}>
           <label htmlFor="location" style={styles.label}>
             Location:
@@ -169,7 +170,7 @@ const PartnerWithUs = () => {
           />
         </div>
 
-        {/* Amount Field */}
+       
         <div style={styles.formGroup}>
           <label htmlFor="amount" style={styles.label}>
             Amount:
@@ -186,7 +187,6 @@ const PartnerWithUs = () => {
           />
         </div>
 
-        {/* Frequency Field */}
         <div style={styles.formGroup}>
           <label htmlFor="frequency" style={styles.label}>
             Frequency:
@@ -203,7 +203,7 @@ const PartnerWithUs = () => {
           />
         </div>
 
-        {/* Contact Preference Radio Buttons */}
+      
         <div style={styles.formGroup}>
           <label style={styles.label}>How would you like to be contacted:</label>
           <div style={styles.radioGroup}>
@@ -230,7 +230,7 @@ const PartnerWithUs = () => {
           </div>
         </div>
 
-        {/* Submit Button */}
+        
         <div style={styles.buttonContainer}>
           <button type="submit" style={styles.button}>
             Submit
@@ -367,3 +367,5 @@ const styles = {
 };
 
 export default PartnerWithUs;
+
+*/

@@ -41,19 +41,19 @@ function Footer() {
       <div className="bottom">
         <div>
           <h4>REACH OUT</h4>
-          <a href="/supportMission">Support A Mission</a>
-          <a href="/partnerWithUs">Partner With Us</a>
-          <a href="/PrayerRequestForm">Need Prayer</a>
+          <a href="https://thecitychurchluzira.churchcenter.com/people/forms/938178">Support A Mission</a>
+          <a href="https://thecitychurchluzira.churchcenter.com/people/forms/938160">Partner With Us</a>
+          <a href="https://thecitychurchluzira.churchcenter.com/people/forms/938154">Need Prayer</a>
         </div>
         <div>
           <h4>MISSIONS</h4>
-          <a href="/fitforlife">Fit for Life</a>
-          <a href="/Cli">The City Leadership Institute</a>
+          <a href="https://thecitychurchluzira.churchcenter.com/people/forms/938149">Fit for Life</a>
+          <a href="https://thecitychurchluzira.churchcenter.com/people/forms/936391">The City Leadership Institute</a>
           <a href="https://www.transformafricanministries.org/">Transform African Ministries</a>
         </div>
         <div>
           <h4>RESOURCES</h4>
-          <a href="/ConnectionCardLin">First Time Guests/Membership</a>
+          <a href="https://thecitychurchluzira.churchcenter.com/people/forms/937756">First Time Guests/Membership</a>
           <a href="/bookLib">Books</a>
           <a
             href="https://open.spotify.com/artist/48Uz3wlAuTWxnvj4uXQPD2" // Corrected Spotify link

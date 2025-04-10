@@ -1,3 +1,4 @@
+/*
 import React, { useState } from "react";
 
 const PrayerRequest = () => {
@@ -7,6 +8,7 @@ const PrayerRequest = () => {
     contactNeeded: "No", // Default to "No"
     contactInfo: "",
   });
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -57,7 +59,6 @@ const PrayerRequest = () => {
     <div style={styles.container}>
       <h2 style={styles.heading}>Need Prayer?</h2>
       <form onSubmit={handleSubmit} style={styles.form}>
-        {/* Name Field */}
         <div style={styles.formGroup}>
           <label htmlFor="name" style={styles.label}>
             Name (optional):
@@ -73,7 +74,7 @@ const PrayerRequest = () => {
           />
         </div>
 
-        {/* Prayer Request Field */}
+     
         <div style={styles.formGroup}>
           <label htmlFor="prayerRequest" style={styles.label}>
             Prayer Request:
@@ -89,7 +90,7 @@ const PrayerRequest = () => {
           />
         </div>
 
-        {/* Contact Needed Dropdown */}
+       
         <div style={styles.formGroup}>
           <label htmlFor="contactNeeded" style={styles.label}>
             Need someone to contact you?
@@ -106,7 +107,6 @@ const PrayerRequest = () => {
           </select>
         </div>
 
-        {/* Contact Info Field (Conditional) */}
         {formData.contactNeeded === "Y" && (
           <div style={styles.formGroup}>
             <label htmlFor="contactInfo" style={styles.label}>
@@ -125,7 +125,7 @@ const PrayerRequest = () => {
           </div>
         )}
 
-        {/* Submit Button */}
+      
         <div style={styles.buttonContainer}>
           <button type="submit" style={styles.button}>
             Submit
@@ -280,3 +280,5 @@ const styles = {
 };
 
 export default PrayerRequest;
+
+*/

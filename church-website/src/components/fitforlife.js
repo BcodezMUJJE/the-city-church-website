@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import Footer from './Footer';
 
@@ -261,3 +262,4 @@ const styles = {
 };
 
 export default FitForLife;
+*/

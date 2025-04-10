@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Cli.css";
 import Img1 from "../Assets/1111.jpg";
 import Img2 from "../Assets/2222.jpg";
@@ -21,53 +21,8 @@ const testimonials = [
 ];
 
 const Cli = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    // Prepare the form data to send
-    const dataToSend = new FormData();
-    dataToSend.append("access_key", "00bb38f1-38dc-4c70-b5ef-0867572bd0da");
-    dataToSend.append("label", "The City Leadership Institute");
-    dataToSend.append("name", formData.name);
-    dataToSend.append("email", formData.email);
-    dataToSend.append("phone", formData.phone);
-    dataToSend.append("message", formData.message);
-
-    try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: dataToSend,
-      });
-
-      const result = await response.json();
-      if (result.success) {
-        alert("Form submitted successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
-        // Redirect after successful submission
-        window.location.href = "https://thecitychurchluzira.churchcenter.com/people/forms/936391";
-      } else {
-        alert("Error submitting form. Please try again.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred. Please try again.");
-    }
+  const handleApplyClick = () => {
+    window.location.href = "https://thecitychurchluzira.churchcenter.com/people/forms/936391";
   };
 
   return (
@@ -87,7 +42,7 @@ const Cli = () => {
           Whether you have questions about the course structure, assignments, or leadership principles,
           we are here to guide and support you every step of the way.
           Together, we aim to build a strong network of visionary leaders who are equipped to tackle the challenges of today and tomorrow.
-          Feel free to reach out to us for any assistance – we’re here to help you succeed!
+          Feel free to reach out to us for any assistance – we're here to help you succeed!
         </p>
       </section>
 
@@ -119,46 +74,16 @@ const Cli = () => {
         </div>
       </section>
 
-      {/* Application Form */}
+      {/* Application Button */}
       <section className="cta">
         <h2>Join CLI Today</h2>
         <p>Become a transformational leader and make a difference.</p>
-        <form onSubmit={handleSubmit} className="application-form">
-          <input type="hidden" name="access_key" value="00bb38f1-38dc-4c70-b5ef-0867572bd0da" />
-          <input type="hidden" name="label" value="The City Leadership Institute" />
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            value={formData.phone}
-            onChange={handleChange}
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Why do you want to join CLI?"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-          <button type="submit" className="button">Submit Application</button>
-        </form>
+        <button 
+          onClick={handleApplyClick} 
+          className="button"
+        >
+          Apply Now
+        </button>
       </section>
       
       <Footer />
