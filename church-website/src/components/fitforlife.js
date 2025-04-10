@@ -1,39 +1,9 @@
-/*
 import React from 'react';
 import Footer from './Footer';
 
 const FitForLife = () => {
-  const [result, setResult] = React.useState("");
-
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.target);
-
-    // Append your Web3Forms access key
-    formData.append("access_key", "00bb38f1-38dc-4c70-b5ef-0867572bd0da");
-
-    // Append the label to the FormData
-    formData.append("label", "Fit For Life"); // Add the label here
-
-    // Submit the form data to Web3Forms
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData,
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset(); // Reset the form after successful submission
-      
-      // Redirect to the specified link after successful submission
-      window.location.href = "https://thecitychurchluzira.churchcenter.com/people/forms/938149";
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
-    }
+  const handleApplyClick = () => {
+    window.location.href = "https://thecitychurchluzira.churchcenter.com/people/forms/938149";
   };
 
   return (
@@ -70,20 +40,13 @@ const FitForLife = () => {
       </section>
 
       <section style={styles.section}>
-        <h2 style={styles.h2}>Contact Us</h2>
-        <form onSubmit={onSubmit} style={styles.form}>
-          <label htmlFor="name" style={styles.label}>Name:</label>
-          <input type="text" id="name" name="name" required style={styles.input} />
-
-          <label htmlFor="email" style={styles.label}>Email:</label>
-          <input type="email" id="email" name="email" required style={styles.input} />
-
-          <label htmlFor="message" style={styles.label}>Message:</label>
-          <textarea id="message" name="message" rows="4" required style={styles.textarea}></textarea>
-
-          <button type="submit" style={styles.button}>Send</button>
-        </form>
-        <span style={styles.result}>{result}</span>
+        <h2 style={styles.h2}>Join Fit for Life</h2>
+        <button 
+          onClick={handleApplyClick} 
+          style={styles.button}
+        >
+          Join Now
+        </button>
       </section>
 
       <Footer />
@@ -96,7 +59,7 @@ const styles = {
     fontFamily: 'Arial, sans-serif',
     textAlign: 'center',
     padding: '20px',
-    maxWidth: '1655px',
+    maxWidth: '1755px',
     margin: '0 auto',
   },
   header: {
@@ -124,49 +87,24 @@ const styles = {
     margin: '10px 0',
     borderRadius: '8px',
   },
-  form: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  label: {
-    margin: '10px 0 5px',
-  },
-  input: {
-    width: '100%',
-    padding: '10px',
-    marginBottom: '10px',
-    border: '1px solid #ccc',
-    borderRadius: '4px',
-    maxWidth: '500px',
-  },
-  textarea: {
-    width: '100%',
-    padding: '10px',
-    marginBottom: '10px',
-    border: '1px solid #ccc',
-    borderRadius: '4px',
-    maxWidth: '500px',
-  },
   button: {
     backgroundColor: 'orange',
     color: 'white',
-    padding: '10px 20px',
+    padding: '12px 24px',
     border: 'none',
     borderRadius: '4px',
     cursor: 'pointer',
-  },
-  footer: {
-    marginTop: '20px',
-    padding: '10px',
-    backgroundColor: '#333',
-    color: 'white',
-    borderRadius: '8px',
-  },
-  result: {
-    marginTop: '10px',
-    color: '#4CAF50',
+    fontSize: '1rem',
     fontWeight: 'bold',
+    transition: 'background-color 0.3s',
+    ':hover': {
+      backgroundColor: '#e67e22', // Darker orange
+      transform: 'scale(1.05)',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
+    },
+    ':active': {
+      transform: 'scale(0.98)'
+    }
   },
 
   // Media Queries for Responsive Design
@@ -192,12 +130,6 @@ const styles = {
     section: {
       padding: '10px',
     },
-    input: {
-      width: '90%',
-    },
-    textarea: {
-      width: '90%',
-    },
   },
 
   '@media (max-width: 768px)': {
@@ -209,12 +141,6 @@ const styles = {
     },
     section: {
       padding: '10px',
-    },
-    input: {
-      width: '90%',
-    },
-    textarea: {
-      width: '90%',
     },
   },
 
@@ -228,14 +154,9 @@ const styles = {
     section: {
       padding: '10px',
     },
-    input: {
-      width: '100%',
-    },
-    textarea: {
-      width: '100%',
-    },
     button: {
       width: '100%',
+      padding: '15px',
     },
   },
 
@@ -249,17 +170,11 @@ const styles = {
     section: {
       padding: '8px',
     },
-    input: {
-      width: '100%',
-    },
-    textarea: {
-      width: '100%',
-    },
     button: {
       width: '100%',
+      padding: '12px',
     },
   },
 };
 
 export default FitForLife;
-*/
