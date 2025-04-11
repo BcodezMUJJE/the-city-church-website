@@ -11,7 +11,7 @@ function NewsAndEvents() {
   const news = [
     {
       id: 1,
-      title: "New Sermon Series: Dynamic Of Manifesting The Kingdom Of God",
+      title: "New Sermon Series: Dynamics Of Spiritual Warfare",
       date: "April 7, 2025", // Ensure date format consistency
       description: "Join us this Sunday as we begin a new sermon series on living a life of grace and forgiveness.",
       image: NewsImage2, // Use appropriate image variable
