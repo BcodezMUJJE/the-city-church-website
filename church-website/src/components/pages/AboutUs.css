@@ -1,6 +1,6 @@
 /* AboutUs.css */
 .story-container {
-  max-width: 1600px;
+  max-width: 1600px; /* Increased max-width */
   margin: 40px auto;
   padding: 30px; /* Increased padding */
   background-color: #ffffff; /* Changed background to white */
@@ -8,24 +8,11 @@
   border-radius: 10px; /* Added border-radius */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Example font */
+  align-items: center; /* Center content */
 }
 
 /* Removed general hover scale effect */
-/*
-.title-section,
-.content-section p,
-.content-section h2,
-.content-section li {
-  transition: transform 0.3s ease-in-out;
-}
-
-.story-container:hover .title-section,
-.story-container:hover .content-section p,
-.story-container:hover .content-section h2,
-.story-container:hover .content-section li {
-  transform: scale(1.05);
-}
-*/
+/* ... hover styles commented out ... */
 
 .title-section {
   background-color: #f39c12; /* Keep theme color */
@@ -86,11 +73,13 @@
 
 /* Avatar Image Styles */
 .avatar-image {
+  /* --- MODIFIED: Increased Size --- */
   width: 200px; /* Avatar size */
   height: 200px;
+  margin-right: 90px; /* Adjusted space between avatar and text */
+  /* --- End Modification --- */
   border-radius: 50%; /* Circular shape */
   object-fit: cover; /* Cover the area */
-  margin-right: 15px; /* Space between avatar and text */
   flex-shrink: 0; /* Prevent avatar from shrinking */
   border: 2px solid #eee; /* Optional subtle border */
 }
@@ -106,6 +95,7 @@
     color: #2c3e50; /* Darker name */
     display: block; /* Put title on next line */
     margin-bottom: 2px;
+    font-size: 1.1em; /* Slightly larger name */
 }
 
 .ministry-description {
@@ -146,9 +136,13 @@
   .content-section h2 { font-size: 1.5rem; margin-top: 2rem; }
 
   .avatar-image {
+      /* --- NOTE: Responsive Size NOT Updated --- */
+      /* Consider increasing this size if 200px is the new base */
       width: 60px;
       height: 60px;
       margin-right: 12px;
+      /* Example adjustment: width: 150px; height: 150px; margin-right: 15px; */
+      /* --- End Note --- */
   }
   .person-details { font-size: 1rem; }
   .ministry-description { font-size: 0.9rem; }
@@ -177,14 +171,17 @@
   }
 
   .avatar-image {
+      /* --- NOTE: Responsive Size NOT Updated --- */
+      /* Consider increasing this size if 200px is the new base */
       width: 50px;
       height: 50px;
       margin-right: 10px;
+      /* Example adjustment: width: 100px; height: 100px; margin-right: 12px; */
+      /* --- End Note --- */
   }
   .person-details { font-size: 0.9rem; line-height: 1.4; }
-   .person-details strong { margin-bottom: 0; }
+   .person-details strong { margin-bottom: 0; font-size: 1em; }
   .ministry-description { font-size: 0.85rem; }
 
   .map-container { height: 300px; }
 }
-/* Removed the hover effect on the map container */

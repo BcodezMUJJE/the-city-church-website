@@ -2,7 +2,7 @@
    Base Styles & Container
    ========================================================================== */
 .news-and-events {
-  max-width: 1695px;
+  max-width: 1400px;
   margin: 0 auto 2rem auto; /* Consistent margin units */
   padding: 20px;
   font-family: 'Arial', sans-serif;
