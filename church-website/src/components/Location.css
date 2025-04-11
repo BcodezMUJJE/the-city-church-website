@@ -52,8 +52,8 @@
   /* aspect-ratio: 16 / 10; */
 
   /* --- Added Fixed Avatar Size --- */
-  width: 150px;  /* Avatar width */
-  height: 700px; /* Avatar height */
+  width: 300px;  /* Avatar width */
+  height: 300px; /* Avatar height */
   flex-shrink: 0; /* Prevent avatar from shrinking */
 
   /* --- Added Circular Shape --- */
@@ -69,6 +69,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  margin-top: .2rem;
   /* --- Changed back to 'cover' for avatar --- */
   object-fit: cover; /* Fill the circle, crop if needed */
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);

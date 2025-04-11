@@ -1,130 +1,190 @@
 /* AboutUs.css */
 .story-container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #f39c12;
-    box-shadow: 0 0 10px rgba(24, 22, 22, 0.786);
-    font-family: Arial, sans-serif;
-  }
-  
-  .title-section,
-  .content-section p,
-  .content-section h2,
-  .content-section li {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .story-container:hover .title-section,
-  .story-container:hover .content-section p,
-  .story-container:hover .content-section h2,
-  .story-container:hover .content-section li {
-    transform: scale(1.05);
-  }
-  
-  .title-section {
-    background-color: #f39c12;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .title-section p {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .content-section {
-    padding: 20px;
-  }
-  
-  .content-section p {
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  .content-section h2 {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #f39c12;
-  }
-  
-  .content-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .content-section li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-  }
-  
-  .content-section li:before {
-    content: "\2022";
-    position: absolute;
-    left: 0;
-    top: 5px;
-    font-size: 18px;
+  max-width: 1600px;
+  margin: 40px auto;
+  padding: 30px; /* Increased padding */
+  background-color: #ffffff; /* Changed background to white */
+  border: 1px solid #eee; /* Softer border */
+  border-radius: 10px; /* Added border-radius */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Example font */
+}
+
+/* Removed general hover scale effect */
+/*
+.title-section,
+.content-section p,
+.content-section h2,
+.content-section li {
+  transition: transform 0.3s ease-in-out;
+}
+
+.story-container:hover .title-section,
+.story-container:hover .content-section p,
+.story-container:hover .content-section h2,
+.story-container:hover .content-section li {
+  transform: scale(1.05);
+}
+*/
+
+.title-section {
+  background-color: #f39c12; /* Keep theme color */
+  color: #fff;
+  padding: 15px 20px; /* Adjusted padding */
+  text-align: center;
+  border-radius: 8px 8px 0 0; /* Rounded top corners */
+  margin: -30px -30px 30px -30px; /* Extend to edges */
+}
+
+.title-section p {
+  margin: 0;
+  font-size: 1.8rem; /* Adjusted size */
+  font-weight: bold;
+}
+
+.content-section {
+  padding: 0; /* Padding is now on story-container */
+}
+
+.content-section p {
+  margin-bottom: 1.5rem; /* Increased spacing */
+  font-size: 1.1rem; /* Slightly larger text */
+  line-height: 1.7; /* Improved readability */
+  color: #555; /* Text color */
+}
+
+.content-section h2 {
+  margin-top: 2.5rem; /* Increased spacing above headings */
+  margin-bottom: 1rem;
+  font-size: 1.8rem; /* Adjusted size */
+  font-weight: 600; /* Slightly less bold */
+  color: #2c3e50; /* Darker heading color */
+  border-bottom: 2px solid #f39c12; /* Theme color underline */
+  padding-bottom: 0.5rem;
+}
+
+.content-section ul.people-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0; /* Spacing below lists */
+}
+
+/* Styles for list items containing people/ministries */
+.content-section ul.people-list li {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically align avatar and text */
+  margin-bottom: 1.5rem; /* Space between list items */
+  padding: 10px; /* Add some padding */
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  /* Removed ::before pseudo-element */
+}
+.content-section ul.people-list li:hover {
+    background-color: #f8f8f8; /* Subtle hover background */
+}
+
+
+/* Avatar Image Styles */
+.avatar-image {
+  width: 200px; /* Avatar size */
+  height: 200px;
+  border-radius: 50%; /* Circular shape */
+  object-fit: cover; /* Cover the area */
+  margin-right: 15px; /* Space between avatar and text */
+  flex-shrink: 0; /* Prevent avatar from shrinking */
+  border: 2px solid #eee; /* Optional subtle border */
+}
+
+/* Details next to avatar */
+.person-details {
+  font-size: 1.05rem; /* Adjust text size */
+  line-height: 1.5;
+  color: #333;
+}
+
+.person-details strong {
+    color: #2c3e50; /* Darker name */
+    display: block; /* Put title on next line */
+    margin-bottom: 2px;
+}
+
+.ministry-description {
+    font-size: 0.95rem;
     color: #666;
+    display: block; /* Ensure it's on its own line */
+    margin-top: 4px;
+}
+
+
+/* Map Container */
+.map-container {
+  width: 100%;
+  height: 450px; /* Keep existing height or adjust */
+  border-radius: 8px; /* Match container radius */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  border: 1px solid #ddd; /* Add a border */
+}
+.map-container iframe {
+    border: none; /* Remove iframe default border */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .story-container {
+    padding: 20px;
+    margin: 20px auto;
   }
-  
-  .map-container {
-    width: 100%;
-    height: 450px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+
+  .title-section {
+      margin: -20px -20px 20px -20px; /* Adjust negative margins */
   }
-  
-  /* Responsive design */
-  @media screen and (max-width: 768px) {
-    .story-container {
-      padding: 15px;
-    }
-  
-    .title-section p {
-      font-size: 20px;
-    }
-  
-    .content-section p {
-      font-size: 16px;
-    }
-  
-    .content-section h2 {
-      font-size: 20px;
-    }
-  
-    .content-section li:before {
-      font-size: 16px;
-    }
+  .title-section p { font-size: 1.5rem; }
+
+  .content-section p { font-size: 1rem; }
+  .content-section h2 { font-size: 1.5rem; margin-top: 2rem; }
+
+  .avatar-image {
+      width: 60px;
+      height: 60px;
+      margin-right: 12px;
   }
-  
-  @media screen and (max-width: 480px) {
-    .story-container {
-      padding: 10px;
-    }
-  
-    .title-section p {
-      font-size: 18px;
-    }
-  
-    .content-section p {
-      font-size: 14px;
-    }
-  
-    .content-section h2 {
-      font-size: 18px;
-    }
-  
-    .content-section li:before {
-      font-size: 14px;
-    }
+  .person-details { font-size: 1rem; }
+  .ministry-description { font-size: 0.9rem; }
+
+  .map-container { height: 350px; }
+}
+
+@media screen and (max-width: 480px) {
+  .story-container {
+    padding: 15px;
+    margin: 15px auto;
   }
+
+   .title-section {
+      margin: -15px -15px 15px -15px; /* Adjust negative margins */
+  }
+  .title-section p { font-size: 1.3rem; }
+
+  .content-section p { font-size: 0.95rem; }
+  .content-section h2 { font-size: 1.3rem; margin-top: 1.5rem;}
+
+  .content-section ul.people-list li {
+      padding: 8px;
+      margin-bottom: 1rem;
+      align-items: flex-start; /* Align avatar top on very small screens */
+  }
+
+  .avatar-image {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+  }
+  .person-details { font-size: 0.9rem; line-height: 1.4; }
+   .person-details strong { margin-bottom: 0; }
+  .ministry-description { font-size: 0.85rem; }
+
+  .map-container { height: 300px; }
+}
+/* Removed the hover effect on the map container */
