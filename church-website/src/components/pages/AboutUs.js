@@ -4,7 +4,7 @@ import Footer from '../Footer'; // Import the Footer component
 // --- Ensure these paths are correct relative to AboutUs.js ---
 // --- Assumes 'Assets' folder is inside /src/assets/ ---
 import Img1 from '../../Assets/Muta.jpg';
-import Img2 from '../../Assets/Onenz.webp';
+import Img2 from '../../Assets/Onezz.jpg';
 import Img3 from '../../Assets/Judith.webp';
 import Img4 from '../../Assets/Kira.webp';
 import Img5 from '../../Assets/Moli.webp';
@@ -12,11 +12,12 @@ import Img6 from '../../Assets/Marth.webp';
 import Img7 from '../../Assets/Ron.jpg';
 import Img8 from '../../Assets/Tan.jpg';
 import Img9 from '../../Assets/Felix.jpeg'; // Assuming you have a placeholder image for Yvvone
-import Img10 from '../../Assets/Elmo.jpeg'; // Assuming you have a placeholder image for Yvv
-import Img11 from '../../Assets/yv.jpg'; // Assuming you have a placeholder image for Y
+import Img10 from '../../Assets/Malobaz.jpg'; // Assuming you have a placeholder image for Yvv
+import Img11 from '../../Assets/Yvonne.jpg'; // Assuming you have a placeholder image for Y
 import Img12 from '../../Assets/Mask.jpg'; // Assuming you have a placeholder image for Y
-import Img13 from '../../Assets/Kida.jpg'; // Assuming you have a placeholder image for Y
+import Img13 from '../../Assets/Kidahaz.jpg'; // Assuming you have a placeholder image for Y
 import Img14 from '../../Assets/2222.jpg'; // Assuming you have a placeholder image for Y
+import Img15 from '../../Assets/Masikas.jpg'; // Assuming you have a placeholder image for Y
 
 // Helper function for generating placeholders ONLY when needed
 // eslint-disable-next-line
@@ -49,7 +50,7 @@ function AboutUs() {
 
   const elders = [
     // --- Use placeholders for elders (replace names if needed) ---
-    { name: "Mr & Mrs. Masika", avatar:Img12 },
+    { name: "Mr & Mrs. Masika", avatar:Img15 },
     { name: "Mr & Mrs. Kidaha", avatar:Img13 },
     { name: "Mr & Mrs. Malooba", avatar:Img10 },
   ];
@@ -59,11 +60,11 @@ function AboutUs() {
     { name: "Media Team", head: "Mr. Felix Bwire", description: "Handling all media and communication needs.", avatar:Img9 },
     { name: "Sound Team", head: "Mr. Tanzi Derrick", description: "Managing audio for services and events.", avatar:Img8 },
     { name: "Children Ministry", head: "Mrs. Lydia Biira", description: "Nurturing the faith of our children.", avatar: Img14 }, // Re-using placeholder
-    { name: "Kings Men Ministry", head: "Mr Bwenje", description: "Empowering the men of the church.", avatar: Img8 },
+    { name: "Kings Men Ministry", head: "Mr Bwenje Caleb", description: "Empowering the men of the church.", avatar: Img8 },
     { name: "Tusinze Band", head: "Mr. Ronald Simbwa", description: "Leading worship and music ministry.", avatar:Img7 },
     { name: "Care Ministry", head: "Mr & Mrs. Malooba", description: "Providing care and support to the congregation.", avatar: Img5}, // Re-using placeholder
-    { name: "First Impressions Team", head: "Yvvone", description: "Welcoming and assisting newcomers.", avatar: Img11 }, // Re-using placeholder
-    { name: "Royal Women Ministry", head: "Yvvone", description: "Empowering women to greatness.", avatar:Img12 }, // Re-using placeholder
+    { name: "First Impressions Team", head: " Miss Yvonne Tumwine", description: "Welcoming and assisting newcomers.", avatar: Img11 }, // Re-using placeholder
+    { name: "Royal Women Ministry", head: "Mrs Masika Victoria", description: "Empowering women to greatness.", avatar:Img12 }, // Re-using placeholder
   ];
 
   return (

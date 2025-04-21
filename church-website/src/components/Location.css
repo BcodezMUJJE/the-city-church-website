@@ -52,8 +52,8 @@
   /* aspect-ratio: 16 / 10; */
 
   /* --- Added Fixed Avatar Size --- */
-  width: 300px;  /* Avatar width */
-  height: 300px; /* Avatar height */
+  width: 400px;  /* Avatar width */
+  height: 400px; /* Avatar height */
   flex-shrink: 0; /* Prevent avatar from shrinking */
 
   /* --- Added Circular Shape --- */
@@ -67,6 +67,7 @@
 /* Location image styling */
 .location-image {
   display: block;
+  margin-top: 5rem;
   width: 100%;
   height: 100%;
   margin-top: .2rem;

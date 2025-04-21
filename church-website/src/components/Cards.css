@@ -11,6 +11,7 @@
     line-height: 1.1;
     color: rgb(0, 0, 0);
   }
+
   
   .cards__container {
     display: flex;
@@ -162,7 +163,10 @@
 @media only screen and (max-width: 480px) {
   .cards {
       padding: 1rem;
-      margin-top: 8rem;
+  }
+  .cards h1 {
+      font-size: 2.4rem;
+      margin-top: 15rem;
   }
 
   .cards__container {
