@@ -1,0 +1,229 @@
+/* Base Styles */
+.next-steps-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .next-steps-header h1 {
+    color: #e69f06;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .description {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .topics-section h2,
+  .registration-form h2 {
+    color: #e69f06;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .topics-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .topics-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1rem;
+  }
+  
+  .registration-form {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* Custom Dropdown with Checkboxes */
+  .dropdown-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .dropdown-toggle {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown-arrow {
+    margin-left: 0.5rem;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 0.25rem;
+  }
+  
+  .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #e59602;
+  }
+  
+  .dropdown-item input[type="checkbox"] {
+    margin-right: 0.75rem;
+    min-width: 18px;
+    min-height: 18px;
+  }
+  
+  /* Radio Buttons */
+  .radio-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .radio-option {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  .radio-option input {
+    margin-right: 0.5rem;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background-color: #e69f06;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+  }
+  
+  .submit-btn:hover {
+    background-color: black;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 600px) {
+    .content-wrapper {
+      flex-direction: row;
+    }
+  
+    .topics-section {
+      flex: 1;
+    }
+  
+    .registration-form {
+      flex: 1;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .next-steps-container {
+      padding: 2rem;
+    }
+  
+    .next-steps-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .description {
+      font-size: 1.1rem;
+    }
+  
+    .topics-section h2,
+    .registration-form h2 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .content-wrapper {
+      gap: 3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .next-steps-header h1 {
+      font-size: 1.75rem;
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+  
+    .registration-form {
+      padding: 1rem;
+    }
+  
+    .radio-group {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .radio-option {
+      margin-right: 0;
+    }
+  }

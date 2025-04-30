@@ -14,7 +14,7 @@ function Cards() {
       <h1>Our Programs</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-          <ul className='cards__items'>
+          <ul className='cards__items cards__items--seven-items'>
             <CardItem
               src={img9}
               text='Join us every Sunday at The City Churches for uplifting worship, inspiring messages, and a warm community as we celebrate God’s grace!'
@@ -52,6 +52,12 @@ function Cards() {
               text='Transforming your business mindset for success unlock your potential with Fit for Life Trainings'
               label='Fit For Life Trainings'
               path='/fitforlife'
+            />
+            <CardItem
+              src={imgFitForLife}
+              text='Building strong faith and spiritual growth with Next Steps at The City Church.'
+              label='Next Steps Classes'
+              path='/nextSteps'
             />
           </ul>
         </div>

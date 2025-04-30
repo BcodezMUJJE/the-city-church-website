@@ -22,6 +22,7 @@ import SupportMission from './components/SupportMission';
 import PartnerWithUs from './components/PartnerWithUs';
 import Slida from './components/Slida';
 import Locations from './components/Locations';
+import NewSteps from './components/NewSteps';
 
 // ScrollToTop Component to handle scroll reset
 const ScrollToTop = () => {
@@ -60,6 +61,7 @@ const App = () => {
         <Route path="/partnerWithUs" element={<PartnerWithUs />} />
         <Route path="/slida" element={<Slida />} />
         <Route path="/location" element={<Locations />} />
+        <Route path="/nextSteps" element={<NewSteps />} /> {/* Redirect to Home for any unknown routes */}
       </Routes>
     </Router>
   );
