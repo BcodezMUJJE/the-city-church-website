@@ -1,19 +1,21 @@
 {
   "short_name": "The City Church",
-  "name": "Create React App Sample",
+  "name": "The City Church",
+  "description": "The City Church is a community of believers in Jesus Christ, dedicated to worship, fellowship, and service.",
+  "lang": "en",
   "icons": [
     {
-      "src": "blackLogo.png",
+      "src": "WhiteLOGOO.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "blackLogo.png",
+      "src": "WhiteLOGOO.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "blackLogo.png",
+      "src": "WhiteLOGOO.png",
       "type": "image/png",
       "sizes": "512x512"
     }

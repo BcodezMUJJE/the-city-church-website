@@ -2,16 +2,20 @@ import React, { useState, useEffect } from "react";
 import "./BookLibrary.css";
 import Footer from "./Footer"; // Import Footer component
 import img1 from "../Assets/boookkk.jpg";
+import img2 from "../Assets/Bk_Fel.png";
+import img3 from "../Assets/Bk_Prie.png"; // Uncomment if needed
+import img4 from "../Assets/Bk_Alex.jpg"; // Uncomment if needed
+import img5 from "../Assets/Bk_AL3.jpg"; // Uncomment if needed
 
 // Sample Data with Image URLs
 const books = [
-  { id: 1, title: "The Bible", author: "Various Authors", description: "The holy book of Christianity.", image: img1 },
-  { id: 2, title: "Mere Christianity", author: "C.S. Lewis", description: "A classic book on Christian apologetics.", image: img1 },
-  { id: 3, title: "The Purpose Driven Life", author: "Rick Warren", description: "A guide to understanding God’s purpose for your life.", image: img1 },
-  { id: 4, title: "The Case for Christ", author: "Lee Strobel", description: "A journalist investigates the evidence for Jesus.", image: img1 },
+  { id: 1, title: "Power For Living", author: "Dr. Alex Mutagubya", description: "The holy book of Christianity.", image: img1 },
+  { id: 2, title: "Unhindered", author: "Dr. Alex Mutagubya", description: "Overcoming The Control And Influence Of The Spirit.", image: img4 },
+  { id: 3, title: "Ministry DNA", author: "Dr. Alex Mutagubya", description: "A guide to understanding God’s purpose for your life.", image: img5 },
+  { id: 4, title: "Marriage For The Unmarried", author: "Dr. Alex Mutagubya", description: "A journalist investigates the evidence for Jesus.", image: img1 },
   { id: 5, title: "Knowing God", author: "J.I. Packer", description: "A deep dive into the nature and character of God.", image: img1 },
-  { id: 6, title: "The Pilgrim's Progress", author: "John Bunyan", description: "An allegorical novel about the Christian journey.", image: img1 },
-  { id: 7, title: "The Hiding Place", author: "Corrie ten Boom", description: "A story of faith and forgiveness during World War II.", image: img1 },
+  { id: 6, title: "Digital Discipleship", author: "Bwire Felix", description: "A Journey In Church Media.", image: img2 },
+  { id: 7, title: "Through A Mum's Eyes", author: "Abote Priscilla Maloba", description: " Life Lessons for my son", image: img3 },
   { id: 8, title: "The Screwtape Letters", author: "C.S. Lewis", description: "A series of letters from a senior demon to a junior demon.", image: img1 },
   { id: 9, title: "The Great Divorce", author: "C.S. Lewis", description: "A theological dream vision about heaven and hell.", image: img1 },
   { id: 10, title: "The Pursuit of God", author: "A.W. Tozer", description: "A Christian classic on the pursuit of intimacy with God.", image: img1 },
