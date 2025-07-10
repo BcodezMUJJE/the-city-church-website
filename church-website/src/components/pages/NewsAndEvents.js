@@ -20,7 +20,7 @@ function NewsAndEvents() {
     {
       id: 2,
       title: "The Youth Experience",
-      date: "March 22, 2025",
+      date: "Every Last Saturday of the Month",
       description: "Calling all youth to join us for a night of worship, fellowship, and fun. Don't miss out!",
       image: NewsImage1, // Use appropriate image variable
       // link: "/news/youth-experience" // Example link (optional)
@@ -34,30 +34,59 @@ function NewsAndEvents() {
       id: 1,
       title: "Sunday Service",
       date: "Every Sunday",
-      time: "10:00 AM",
+      time: "8:00 & 10:00 am",
+      location: "The City Church",
+      description: "Join us for our weekly Sunday service filled with worship, teaching, and community.",
+      image: NewsImage1, // Use appropriate image variable
+      // registrationLink: "/events/sunday-service" // Example link (optional)
+    },
+    {
+      id: 2,
+      title: "Round Table Discussion",
+      date: "Every Last Thursday of the Month",
+      time: "4:00 pm",
+      location: "The City Church",
+      description: "Join us for a round table discussion on various topics affecting our community.",
+      image: NewsImage1, // Use appropriate image variable
+      // registrationLink: "/events/sunday-service" // Example link (optional)
+    },
+    {
+      id: 3,
+      title: "21 Days of Prayer and Fasting",
+      date: "From 1st August to 22nd August", // Note: This date is in the past
+      time: "7:00 pm",
+      location: "The City Church Prayer",
+      description: "Come together as a community to pray for our city, nation, and world.",
+      image: NewsImage2, // Use appropriate image variable
+      // registrationLink: "/events/prayer-night" // Example link (optional)
+    },
+    {
+      id: 4,
+      title: "Royal Women's Fellowship",
+      date: "Every Sunday",
+      time: "10:00 am",
       location: "The City Church",
       description: "Join us for a powerful time of worship, prayer, and teaching.",
       image: NewsImage1, // Use appropriate image variable
       // registrationLink: "/events/sunday-service" // Example link (optional)
     },
     {
-      id: 2,
-      title: "Prayer Night",
-      date: "October 10, 2023", // Note: This date is in the past
-      time: "7:00 PM",
-      location: "The City Church Prayer Room",
-      description: "Come together as a community to pray for our city, nation, and world.",
-      image: NewsImage2, // Use appropriate image variable
-      // registrationLink: "/events/prayer-night" // Example link (optional)
+      id: 5,
+      title: "Kings Men's Fellowship",
+      date: "Every Last Sunday of the Month",
+      time: "4:00 pm",
+      location: "The City Church",
+      description: "Join us for a powerful time of worship, prayer, and teaching.",
+      image: NewsImage1, // Use appropriate image variable
+      // registrationLink: "/events/sunday-service" // Example link (optional)
     },
-    // Add more event items if needed
   ];
 
   // --- Data for Tusinze Fest ---
   const tusinzeFest = {
     id: 4, // Ensure ID is unique if combining lists later
-    title: "Tusinze Fest",
-    date: "Easter Weekend", // Consider specific dates
+    title: "Youth Confest",
+    date: "19th Saturday", // Consider specific dates
     time: "2:00 PM",
     location: "The City Church Luzira",
     description: "Join us for the annual Sinza Fest, a celebration of community and culture.",

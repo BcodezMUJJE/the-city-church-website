@@ -13,9 +13,9 @@
 
 .news-and-events h1 {
   text-align: center;
-  color: #2c3e50; /* Dark Blue/Grey */
-  margin-bottom: 40px;
-  font-size: 2.5em;
+  color: black; /* Dark Blue/Grey */
+  margin-bottom: 20px;
+  font-size: 3.5em;
 }
 
 /* ==========================================================================
@@ -78,7 +78,7 @@
    ========================================================================== */
 .card-image-container {
   width: 100%;
-  height: 1200px; /* Default height */
+  height: 250px; /* Default height */
   overflow: hidden;
   /* border-radius applied by parent card */
 }

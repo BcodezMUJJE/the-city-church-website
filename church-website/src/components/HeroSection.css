@@ -1,388 +1,237 @@
-/* Background Video Styling */
-.video {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
-}
-
 /* Hero Container */
 .hero-container {
-    background: url('../Assets/MUSU.jpg') center center/cover no-repeat;
-    height: 110vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
-    padding: 20px;
-    text-align: center;
+  background: url('../Assets/MUSU.jpg') center center/cover no-repeat;
+  height: auto;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Heading Animation */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
+/* Heading Styling */
 .hero-container h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: inline-block;
-    animation: fadeIn 2s ease-in-out;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: bold;
+  color: #fff;
+  padding: 15px;
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero-container h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    display: inline-block;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: bold;
+  color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Typing Animation for Paragraph */
-@keyframes typingEffect {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
+/* Paragraph Styling */
 .hero-container p {
-    margin-top: 8px;
-    color: #fff;
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    border-right: 2px solid #fff;
+  margin: 10px 0;
+  color: #fff;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  max-width: 800px;
+  padding: 0 20px;
 }
 
 /* Button Container */
 .hero-btns {
-    margin-top: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 100%;
-    flex-wrap: nowrap;
-    flex-direction: row !important;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 /* Button Styling */
 .hero-btns .btn {
-    min-width: 150px;
-    padding: 15px 25px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    flex: 0 1 auto;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    background: rgba(220, 118, 16, 0.9);
-    color: white;
-    border: none;
-    cursor: pointer;
+  min-width: 180px;
+  padding: 12px 20px;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  background: rgba(220, 118, 16, 0.9);
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .hero-btns .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background: rgba(220, 118, 16, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  background: rgb(2, 2, 2);
 }
 
 .fa-play-circle {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 /* Location Cards */
 .location-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    width: 90%;
-    max-width: 1400px;
-    margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 95%;
+  max-width: 1200px;
+  margin: 2rem auto;
 }
 
 .location-card {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 2rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    text-align: center;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .location-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .location-card h3 {
-    color: #fa8108;
-    font-size: clamp(1.3rem, 2vw, 1.8rem);
-    margin-bottom: 1rem;
-    font-weight: 700;
-    line-height: 1.3;
+  color: #fa8108;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .location-card p {
-    color: #000000;
-    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
+  color: #333;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 .location-card a {
-    display: inline-block;
-    background-color: #fa8108;
-    color: white !important;
-    padding: clamp(0.6rem, 1.5vw, 0.8rem) clamp(1rem, 2vw, 1.5rem);
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  display: inline-block;
+  background-color: #fa8108;
+  color: white !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+  border: 2px solid transparent;
+}
+
+.location-card a:hover {
+  background-color: #e67300;
+  border-color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Responsive Breakpoints */
-@media screen and (min-width: 1600px) {
-    .location-cards {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .location-cards {
-        width: 95%;
-        padding: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .location-cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-    }
-    
-    .location-card {
-        min-height: 280px;
-        padding: 1.5rem;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    .hero-container h1 {
-        font-size: 3rem;
-    }
-    
-    .hero-container h2 {
-        font-size: 2rem;
-    }
-    
-    .hero-btns {
-        gap: 15px;
-        flex-direction: column;
-    }
-    
-    .location-cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.2rem;
-        padding: 1rem;
-    }
-    
-    .location-card {
-        min-height: 250px;
-        padding: 1.2rem;
-    }
+  .location-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .location-card {
+    padding: 1.2rem;
+    min-height: 200px;
+  }
+  
+  .hero-btns {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .hero-btns .btn {
+    min-width: 160px;
+    padding: 10px 15px;
+  }
 }
 
-@media screen and (max-width: 600px) {
-    .location-cards {
-        grid-template-columns: 1fr;
-        max-width: 500px;
-    }
-    
-    .location-card {
-        min-height: auto;
-        padding: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .hero-container h1 {
-        font-size: 2rem;
-    }
-    
-    .hero-container h2 {
-        font-size: 1.5rem;
-    }
-
-    .location-card {
-        padding: 1rem;
-    }
-    
-    .location-card h3 {
-        font-size: 1.3rem;
-    }
-    
-    .location-card a {
-        padding: 0.7rem 1.2rem;
-    }
-}
-/* Ultra Small Devices (phones under 360px) */
-@media screen and (max-width: 360px) {
-    .hero-container {
-        height: auto;
-        min-height: 100vh;
-        padding: 10px;
-    }
-    
-    .hero-container h1 {
-        font-size: 1.8rem;
-        padding: 10px;
-        margin-top: 2rem;
-    }
-    
-    .hero-container h2 {
-        font-size: 1.4rem;
-        padding: 10px;
-    }
-    
-    .hero-container p {
-        font-size: 14px;
-        white-space: normal;
-        border-right: none;
-        display: block;
-        margin: 1rem 0;
-    }
-    
-    .hero-btns {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 1.5rem;
-    }
-    
-    .hero-btns .btn {
-        width: 100%;
-        max-width: 250px;
-        padding: 12px 20px;
-        font-size: 16px;
-    }
-    
-    .location-cards {
-        grid-template-columns: 1fr;
-        padding: 0.5rem;
-        gap: 1rem;
-        margin: 1.5rem auto;
-    }
-    
-    .location-card {
-        padding: 1rem;
-        min-height: auto;
-    }
-    
-    .location-card h3 {
-        font-size: 1.2rem;
-    }
-    
-    .location-card p {
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-    }
-    
-    .location-card a {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
-    }
-}
-
-/* Small Landscape Phones */
-@media screen and (max-width: 640px) and (orientation: landscape) {
-    .hero-container {
-        height: auto;
-        padding: 2rem 0.5rem;
-    }
-    
-    .hero-container h1 {
-        font-size: 2rem;
-    }
-    
-    .hero-container h2 {
-        font-size: 1.6rem;
-    }
-    
-    .hero-btns {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    
-    .hero-btns .btn {
-        min-width: 120px;
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-    
-    .location-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Fix for paragraph animation on small screens */
 @media screen and (max-width: 480px) {
-    .hero-container p {
-        animation: none;
-        white-space: normal;
-        border-right: none;
-        display: block;
-        overflow: visible;
-        width: auto;
-    }
+  .hero-container {
+    padding: 15px;
+  }
+  
+  .location-cards {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+  
+  .location-card {
+    padding: 1rem;
+    min-height: auto;
+  }
+  
+  .hero-btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .hero-btns .btn {
+    width: 100%;
+    max-width: 250px;
+  }
 }
 
-/* Button focus states for accessibility */
+/* Extra small devices (phones under 360px) */
+@media screen and (max-width: 360px) {
+  .hero-container h1 {
+    font-size: 1.8rem;
+    padding: 10px;
+  }
+  
+  .hero-container h2 {
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+  
+  .location-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .location-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Accessibility and Touch Device Optimizations */
 .hero-btns .btn:focus {
-    outline: 2px solid white;
-    outline-offset: 2px;
+  outline: 2px solid white;
+  outline-offset: 2px;
 }
 
-/* Prevent hover effects on touch devices */
 @media (hover: none) {
-    .hero-btns .btn:hover {
-        transform: none;
-        box-shadow: none;
-    }
-}
-
-/* Touch Device Optimization */
-@media (hover: none) {
-    .location-card:hover {
-        transform: none;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
+  .hero-btns .btn:hover,
+  .location-card:hover {
+    transform: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
 }
