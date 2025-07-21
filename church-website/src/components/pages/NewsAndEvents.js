@@ -2,8 +2,13 @@ import React from 'react';
 import '../../App.css'; // Assuming global styles are here
 import "./NewsAndEvents.css"; // Styles specific to this component
 import Footer from '../Footer'; // Footer component
-import NewsImage1 from '../../Assets/royalWomen.jpg'; // Ensure path is correct (src/assets/)
-import NewsImage2 from '../../Assets/sunday.jpeg';   // Ensure path is correct (src/assets/)
+import NewsImage2 from '../../Assets/Sermon.jpg';   // Ensure path is correct (src/assets/)
+import NewsImage3 from '../../Assets/Ser3.jpg'; // Example image import
+import NewsImage4 from '../../Assets/tcg.jpg'; // Example image import
+import NewsImage5 from '../../Assets/w1.jpg'; // Example image import
+import NewsImage6 from '../../Assets/mc.jpg'; // Example image import
+import NewsImage7 from '../../Assets/kgs.jpg'; // Example image import
+import NewsImage8 from '../../Assets/pray.jpg'; // Example image import
 // Add other image imports if needed
 
 function NewsAndEvents() {
@@ -22,7 +27,7 @@ function NewsAndEvents() {
       title: "The Youth Experience",
       date: "Every Last Saturday of the Month",
       description: "Calling all youth to join us for a night of worship, fellowship, and fun. Don't miss out!",
-      image: NewsImage1, // Use appropriate image variable
+      image: NewsImage4, // Use appropriate image variable
       // link: "/news/youth-experience" // Example link (optional)
     },
     // Add more news items if needed
@@ -37,7 +42,7 @@ function NewsAndEvents() {
       time: "8:00 & 10:00 am",
       location: "The City Church",
       description: "Join us for our weekly Sunday service filled with worship, teaching, and community.",
-      image: NewsImage1, // Use appropriate image variable
+      image: NewsImage3, // Use appropriate image variable
       // registrationLink: "/events/sunday-service" // Example link (optional)
     },
     {
@@ -47,7 +52,7 @@ function NewsAndEvents() {
       time: "4:00 pm",
       location: "The City Church",
       description: "Join us for a round table discussion on various topics affecting our community.",
-      image: NewsImage1, // Use appropriate image variable
+      image: NewsImage6, // Use appropriate image variable
       // registrationLink: "/events/sunday-service" // Example link (optional)
     },
     {
@@ -57,7 +62,7 @@ function NewsAndEvents() {
       time: "7:00 pm",
       location: "The City Church Prayer",
       description: "Come together as a community to pray for our city, nation, and world.",
-      image: NewsImage2, // Use appropriate image variable
+      image: NewsImage8, // Use appropriate image variable
       // registrationLink: "/events/prayer-night" // Example link (optional)
     },
     {
@@ -67,7 +72,7 @@ function NewsAndEvents() {
       time: "10:00 am",
       location: "The City Church",
       description: "Join us for a powerful time of worship, prayer, and teaching.",
-      image: NewsImage1, // Use appropriate image variable
+      image: NewsImage5, // Use appropriate image variable
       // registrationLink: "/events/sunday-service" // Example link (optional)
     },
     {
@@ -77,7 +82,7 @@ function NewsAndEvents() {
       time: "4:00 pm",
       location: "The City Church",
       description: "Join us for a powerful time of worship, prayer, and teaching.",
-      image: NewsImage1, // Use appropriate image variable
+      image: NewsImage7, // Use appropriate image variable
       // registrationLink: "/events/sunday-service" // Example link (optional)
     },
   ];
@@ -85,12 +90,12 @@ function NewsAndEvents() {
   // --- Data for Tusinze Fest ---
   const tusinzeFest = {
     id: 4, // Ensure ID is unique if combining lists later
-    title: "Youth Confest",
+    title: "21 Days Of Prayer And Fasting",
     date: "19th Saturday", // Consider specific dates
-    time: "2:00 PM",
+    time: "Every Day",
     location: "The City Church Luzira",
-    description: "Join us for the annual Sinza Fest, a celebration of community and culture.",
-    image: NewsImage1, // Use appropriate image variable
+    description: "Join us as we fast and pray for our community and nation. This is a time to seek God's guidance and strength.",
+    image: NewsImage8, // Use appropriate image variable
     // registrationLink: "/events/tusinze-fest" // Example link (optional)
   };
 
